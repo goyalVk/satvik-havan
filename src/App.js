@@ -12,10 +12,9 @@ import Contact from "./pages/Contact";
 import WhatsAppButton from "./components/WhatsAppButton";
 import ScrollTopButton from "./components/ScrollTopButton";
 
-
 function App() {
   return (
-    <Router>
+    <Router basename="/satvik-havan">
       <Navbar />
       <div className="main-content">
         <Routes>
