@@ -14,7 +14,7 @@ import ScrollTopButton from "./components/ScrollTopButton";
 
 function App() {
   return (
-    <Router basename="/satvik-havan">
+    <Router>
       <Navbar />
       <div className="main-content">
         <Routes>
