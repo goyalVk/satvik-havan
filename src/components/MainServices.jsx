@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MainServices = () => {
   const services = [
@@ -22,10 +23,6 @@ const MainServices = () => {
     }
   ];
 
-  const handleServiceClick = () => {
-    window.location.href = '/booking';
-  };
-
   return (
     <section className="main-services">
       <div className="container">
@@ -36,13 +33,13 @@ const MainServices = () => {
               <img src={service.img} alt={service.title} />
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <button onClick={handleServiceClick}>{service.cta}</button>
+              {/* <button onClick={handleServiceClick}>{service.cta}</button> */}
             </div>
           ))}
         </div>
         <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}>
+          <Link to="/booking">
           <button
-            onClick={handleServiceClick}
             style={{
               background: "linear-gradient(45deg, #E6A74E, #C77B30)",
               color: "#FFF8EC",
@@ -66,6 +63,7 @@ const MainServices = () => {
           >
             Explore More
           </button>
+          </Link>
         </div>
       </div>
     </section>

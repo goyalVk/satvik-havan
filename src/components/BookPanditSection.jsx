@@ -1,10 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BookPanditSection = () => {
-  const handleBook = () => {
-    window.location.href = "/booking";
-  };
-
   return (
     <section
       className="book-section"
@@ -34,37 +31,39 @@ const BookPanditSection = () => {
             marginBottom: "2rem",
           }}
         >
-          Whether it’s your home, office, or across the ocean —  
-          our experienced <strong>Vedic Pandit Ji</strong> brings sacred energy and guidance to you.  
-          From <strong>Griha Pravesh</strong> to <strong>Corporate Puja</strong>, or <strong> Online Rituals</strong> —  
+          Whether it’s your home, office, or across the ocean —
+          our experienced <strong>Vedic Pandit Ji</strong> brings sacred energy and guidance to you.
+          From <strong>Griha Pravesh</strong> to <strong>Corporate Puja</strong>, or <strong>Online Rituals</strong> —
           perform every ceremony the <strong>Satvik way</strong>, without stress.
         </p>
 
-        <button
-          onClick={handleBook}
-          style={{
-            background: "linear-gradient(45deg, #E6A74E, #C77B30)",
-            color: "#FFF8EC",
-            padding: "1rem 2.5rem",
-            border: "none",
-            borderRadius: "6px",
-            fontWeight: "600",
-            cursor: "pointer",
-            fontSize: "1.1rem",
-            boxShadow: "0 4px 15px rgba(199,123,48,0.3)",
-            transition: "all 0.3s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.transform = "scale(1.05)";
-            e.target.style.boxShadow = "0 6px 20px rgba(199,123,48,0.4)";
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.transform = "scale(1)";
-            e.target.style.boxShadow = "0 4px 15px rgba(199,123,48,0.3)";
-          }}
-        >
-          📿 Book Pandit Ji Now
-        </button>
+        {/* ✅ FIXED: React Router Link */}
+        <Link to="/booking">
+          <button
+            style={{
+              background: "linear-gradient(45deg, #E6A74E, #C77B30)",
+              color: "#FFF8EC",
+              padding: "1rem 2.5rem",
+              border: "none",
+              borderRadius: "6px",
+              fontWeight: "600",
+              cursor: "pointer",
+              fontSize: "1.1rem",
+              boxShadow: "0 4px 15px rgba(199,123,48,0.3)",
+              transition: "all 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = "scale(1.05)";
+              e.target.style.boxShadow = "0 6px 20px rgba(199,123,48,0.4)";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = "scale(1)";
+              e.target.style.boxShadow = "0 4px 15px rgba(199,123,48,0.3)";
+            }}
+          >
+            📿 Book Pandit Ji Now
+          </button>
+        </Link>
 
         <p
           style={{

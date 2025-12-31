@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CTABanner = () => {
-  const handleExplore = () => {
-    window.location.href = '/booking';
-  };
-
   return (
     <section className="cta-banner">
       <div className="container">
         <h2>Bring Satvik Energy Home Today.</h2>
-        <button onClick={handleExplore}>Explore More</button>
+
+        {/* ✅ FIXED: React Router Link */}
+        <Link to="/booking">
+          <button>Explore More</button>
+        </Link>
       </div>
     </section>
   );
