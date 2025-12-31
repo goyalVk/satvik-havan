@@ -404,14 +404,14 @@ body:hover::after {
 }
 
 /* Sections */
-.kits-section, .herbal-section, .book-section, .testimonials, .cta-banner, .kit-detail-section {
+.kits-section, .herbal-section, .book-section, .testimonials, .cta-banner, .kit-detail-section, .who-is-this-for, .what-we-do, .how-it-works, .main-services {
   padding: 6rem 2rem;
   background: #f9f5f0; /* Clean, light background for separation */
   position: relative;
   overflow: hidden;
 }
 
-.kits-section h2, .herbal-section h2, .book-section h2, .testimonials h2, .cta-banner h2, .kit-detail-section h2 {
+.kits-section h2, .herbal-section h2, .book-section h2, .testimonials h2, .cta-banner h2, .kit-detail-section h2, .who-is-this-for h2, .what-we-do h2, .how-it-works h2, .main-services h2 {
   text-align: center;
   margin-bottom: 3rem;
   color: #3e2a1f; /* Dark color for visibility */
@@ -435,6 +435,177 @@ body:hover::after {
 
 .herbs-grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Who Is This For */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background: #fff8ec;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.category-card h3 {
+  color: #3e2a1f;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.category-card p {
+  color: #a67c52;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.category-card button {
+  background: linear-gradient(45deg, #d4af37, #f5d97a);
+  color: #3e2a1f;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-card button:hover {
+  background: linear-gradient(45deg, #a67c52, #d4af37);
+  transform: scale(1.05);
+}
+
+/* Main Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #fff8ec;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  color: #3e2a1f;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: #a67c52;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.service-card button {
+  background: linear-gradient(45deg, #d4af37, #f5d97a);
+  color: #3e2a1f;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-card button:hover {
+  background: linear-gradient(45deg, #a67c52, #d4af37);
+  transform: scale(1.05);
+}
+
+/* What We Do */
+.services-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-list li {
+  background: #fff8ec;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #3e2a1f;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-list li:before {
+  content: "🪔";
+  margin-right: 1rem;
+}
+
+/* How It Works */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #d4af37, #f5d97a);
+  color: #3e2a1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  color: #3e2a1f;
+  font-size: 1.1rem;
 }
 
 /* Trust Ribbon */
@@ -2204,35 +2375,35 @@ h3 { font-size: 1.5rem; }
 
 /* Sections Responsive */
 @media (max-width: 1024px) {
-  .kits-section, .herbal-section, .book-section, .testimonials, .cta-banner, .kit-detail-section {
+  .kits-section, .herbal-section, .book-section, .testimonials, .cta-banner, .kit-detail-section, .who-is-this-for, .what-we-do, .how-it-works {
     padding: 4rem 1.5rem;
   }
-  .kits-section h2, .herbal-section h2, .book-section h2, .testimonials h2, .cta-banner h2, .kit-detail-section h2 {
+  .kits-section h2, .herbal-section h2, .book-section h2, .testimonials h2, .cta-banner h2, .kit-detail-section h2, .who-is-this-for h2, .what-we-do h2, .how-it-works h2 {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .kits-section, .herbal-section, .book-section, .testimonials, .cta-banner, .kit-detail-section {
+  .kits-section, .herbal-section, .book-section, .testimonials, .cta-banner, .kit-detail-section, .who-is-this-for, .what-we-do, .how-it-works {
     padding: 3rem 1rem;
   }
-  .kits-section h2, .herbal-section h2, .book-section h2, .testimonials h2, .cta-banner h2, .kit-detail-section h2 {
+  .kits-section h2, .herbal-section h2, .book-section h2, .testimonials h2, .cta-banner h2, .kit-detail-section h2, .who-is-this-for h2, .what-we-do h2, .how-it-works h2 {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .kits-section, .herbal-section, .book-section, .testimonials, .cta-banner, .kit-detail-section {
+  .kits-section, .herbal-section, .book-section, .testimonials, .cta-banner, .kit-detail-section, .who-is-this-for, .what-we-do, .how-it-works {
     padding: 2rem 0.75rem;
   }
-  .kits-section h2, .herbal-section h2, .book-section h2, .testimonials h2, .cta-banner h2, .kit-detail-section h2 {
+  .kits-section h2, .herbal-section h2, .book-section h2, .testimonials h2, .cta-banner h2, .kit-detail-section h2, .who-is-this-for h2, .what-we-do h2, .how-it-works h2 {
     font-size: 1.75rem;
   }
 }
 
 /* Grids Responsive */
 @media (max-width: 1024px) {
-  .kits-grid, .herbs-grid, .card-grid, .testimonials-grid {
+  .kits-grid, .herbs-grid, .card-grid, .testimonials-grid, .categories-grid, .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
   }
@@ -2242,7 +2413,7 @@ h3 { font-size: 1.5rem; }
 }
 
 @media (max-width: 768px) {
-  .kits-grid, .herbs-grid, .card-grid, .testimonials-grid {
+  .kits-grid, .herbs-grid, .card-grid, .testimonials-grid, .categories-grid, .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
   }
@@ -2252,7 +2423,7 @@ h3 { font-size: 1.5rem; }
 }
 
 @media (max-width: 480px) {
-  .kits-grid, .herbs-grid, .card-grid, .testimonials-grid {
+  .kits-grid, .herbs-grid, .card-grid, .testimonials-grid, .categories-grid, .services-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }

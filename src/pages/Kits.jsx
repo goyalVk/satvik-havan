@@ -4,66 +4,50 @@ import "../styles/global.css";
 
 const Kits = () => {
   const kitsData = [
-    {
-      id: 1,
-      name: "Daily Pooja Kit",
-      price: 299,
-      description:
-        "A sacred set of 21 essential items for your everyday worship — making your morning puja effortless and complete.",
-      occasion: "Daily Worship & Home Rituals",
-      totalItems: 21,
-      items: ["Agarbatti", "Kapoor", "Diya", "Kumkum", "Haldi", "Chandan", "Janeu"],
-      img: "https://servdharm.com/cdn/shop/files/SampoornPoojaSamagriKit_7_800x.png?v=1712585276",
-    },
-    {
-      id: 2,
-      name: "Griha Pravesh Kit",
-      price: 499,
-      description:
-        "Everything needed for your sacred new beginning — a complete set for Havan and Griha Pravesh with temple-approved items.",
-      occasion: "Housewarming & New Beginnings",
-      totalItems: 36,
-      items: ["Samidha", "Ghee", "Kapoor", "Kalash", "Moli", "Havan Kund"],
-      img: "https://pujasamagriwala.com/wp-content/uploads/2023/12/Griha-Pravesh-Puja-Kit-300x300.webp",
-    },
-    {
-      id: 3,
-      name: "Satyanarayan Puja Kit",
-      price: 599,
-      description:
-        "A devotional set crafted for complete Satyanarayan Puja — includes guidebook and QR video for step-by-step rituals.",
-      occasion: "Satyanarayan Katha & Family Pooja",
-      totalItems: 30,
-      items: ["Katha Book", "Chawal", "Kesar", "Mishri", "Panchamrit", "Supari"],
-      img: "https://m.media-amazon.com/images/I/81X8M8wXFxL.jpg",
-    },
-    {
-      id: 4,
-      name: "Navratri Puja Kit",
-      price: 549,
-      description:
-        "Celebrate the nine forms of Devi with purity — includes all samagri for daily Navratri puja, Kalash sthapana, and diya rituals.",
-      occasion: "Navratri, Durga Puja & Shakti Sadhana",
-      totalItems: 28,
-      items: ["Nine Grah Daan Items", "Kalava", "Til", "Rice", "Dhoop", "Diya"],
-      img: "https://m.media-amazon.com/images/I/71tSPs13X-L.jpg",
-    },
-    {
-      id: 5,
-      name: "Premium Home Temple Kit",
-      price: 899,
-      description:
-        "A complete temple setup for your home — from diya and bell to pure havan samagri. Crafted for peace and daily connection with the Divine.",
-      occasion: "All Spiritual & Family Rituals",
-      totalItems: 40,
-      items: ["Temple Bell", "Diya", "Kalash", "Cotton Wicks", "Loban", "Kumkum"],
-      img: "https://assets-news.housing.com/news/wp-content/uploads/2022/02/17111214/Mandir-for-home-Your-guide-to-set-up-a-pooja-room.jpg",
-    },
-  ];
+  {
+    id: 1,
+    name: "Home Pooja & Family Rituals",
+    description:
+      "Ghar par shanti, pavitrata aur parampara ke saath pooja karna har parivaar ke liye vishesh hota hai. Satvik Havan ghar ki pooja ke liye uchit Pandit Ji aur poori vyavastha karta hai, taaki aap nishchint hokar shraddha ke saath pooja kar sakein.",
+    occasion: "Daily Pooja, Satyanarayan Katha, Havan & Family Rituals",
+    img: "https://servdharm.com/cdn/shop/files/SampoornPoojaSamagriKit_7_800x.png?v=1712585276",
+    ctaText: "Book Pooja on WhatsApp",
+  },
+  {
+    id: 2,
+    name: "Corporate & Office Pooja",
+    description:
+      "Kaaryalaya aur vyavsay ke liye shubh aarambh aur sakaratmak urja bahut mahatvapurn hoti hai. Office inauguration, festivals aur vishesh avsaron ke liye Satvik Havan pooja aur Pandit Ji ki vyavastha karta hai.",
+    occasion: "Office Inauguration, Festivals & Corporate Rituals",
+    img: "https://assets-news.housing.com/news/wp-content/uploads/2022/02/17111214/Mandir-for-home-Your-guide-to-set-up-a-pooja-room.jpg",
+    ctaText: "Discuss Corporate Pooja",
+  },
+  {
+    id: 3,
+    name: "Vastu Consultation",
+    description:
+      "Ghar, office ya plot ke liye vastu margdarshan jeevan mein santulan aur sakaratmakta laata hai. Anubhavi Pandit Ji ke madhyam se aap apne sthan ke liye sahi salah aur margdarshan pa sakte hain.",
+    occasion: "Home, Office & Plot Vastu Guidance",
+    img: "https://assets-news.housing.com/news/wp-content/uploads/2022/02/17111214/Mandir-for-home-Your-guide-to-set-up-a-pooja-room.jpg",
+    ctaText: "Consult Pandit Ji",
+  },
+  {
+    id: 4,
+    name: "Pandit Ji Guidance & Meetings",
+    description:
+      "Kabhi kabhi jeevan ke faislon ke liye sahi margdarshan zaroori hota hai. Kundli, muhurat, vivah, naamkaran ya kisi bhi dharmik salah ke liye Pandit Ji se shant aur vishwas bhari baatcheet.",
+    occasion: "Horoscope, Muhurat, Marriage & Ritual Guidance",
+    img: "https://static.toiimg.com/thumb/msid-99625735,width-1280,height-720,resizemode-4/.jpg",
+    ctaText: "Talk to Pandit Ji",
+  },
+];
 
-  const handleOrderWhatsApp = (kit) => {
-    const message = `Namaste 🙏, I want to order the ${kit.name} for ₹${kit.price}. Please provide details.`;
-    const url = `https://wa.me/918076170877?text=${encodeURIComponent(message)}`;
+
+   const handleOrderWhatsApp = (service) => {
+    const message = `Namaste 🙏, I want to know more about ${service.name}. I am looking for complete pooja arrangement with Pandit Ji. Please guide me.`;
+    const url = `https://wa.me/918076170877?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(url, "_blank");
   };
 
@@ -76,7 +60,7 @@ const Kits = () => {
         overflowX: "hidden",
       }}
     >
-      {/* Hero Section */}
+      {/* HERO SECTION */}
       <section
         style={{
           textAlign: "center",
@@ -92,26 +76,30 @@ const Kits = () => {
             fontWeight: "700",
           }}
         >
-          🪔 Satvik Pooja Kits — Purity, Packed with Devotion
+          🪔 Pooja Services — With Care, Tradition & Peace
         </h1>
+
         <p
           style={{
             color: "#5C432A",
-            maxWidth: "700px",
+            maxWidth: "750px",
             margin: "0 auto 2rem",
             fontSize: "1.1rem",
             lineHeight: "1.8",
           }}
         >
-          Satvik Havan began with a simple thought — that no devotee should rush
-          to the market before a pooja.  
-          These carefully crafted kits bring <b>all essentials</b> to your doorstep,  
-          so your only focus is <b>faith and devotion</b>.
+          Pooja is not just a ritual — it is a moment of faith and inner peace.
+          <br />
+          Every family, every belief, and every occasion is different.
+          <br />
+          <br />
+          At Satvik Havan, we first understand your requirement and then arrange
+          the right Pandit Ji along with complete pooja setup, so you can focus
+          only on devotion.
         </p>
+
         <button
-          onClick={() =>
-            handleOrderWhatsApp({ name: "General Inquiry", price: "" })
-          }
+          onClick={() => handleOrderWhatsApp({ name: "Pooja Services" })}
           style={{
             background: "#E6A74E",
             color: "#FFF",
@@ -123,14 +111,18 @@ const Kits = () => {
             transition: "all 0.3s ease",
             boxShadow: "0 0 10px rgba(230, 167, 78, 0.5)",
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
-          onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.transform = "scale(1.05)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.transform = "scale(1)")
+          }
         >
-          📦 Order Your Kit on WhatsApp
+          🙏 Talk to Us on WhatsApp
         </button>
       </section>
 
-      {/* Kits Grid */}
+      {/* SERVICES GRID */}
       <section style={{ padding: "4rem 2rem" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <h2
@@ -142,7 +134,7 @@ const Kits = () => {
               fontWeight: "700",
             }}
           >
-            Choose the Kit That Resonates with Your Ritual
+            Pooja Services for Every Need
           </h2>
 
           <div
@@ -152,9 +144,9 @@ const Kits = () => {
               gap: "2rem",
             }}
           >
-            {kitsData.map((kit) => (
+            {kitsData.map((service) => (
               <div
-                key={kit.id}
+                key={service.id}
                 style={{
                   background: "#FFF8EC",
                   borderRadius: "15px",
@@ -176,8 +168,8 @@ const Kits = () => {
                 }}
               >
                 <img
-                  src={kit.img}
-                  alt={kit.name}
+                  src={service.img}
+                  alt={service.name}
                   style={{
                     width: "100%",
                     borderRadius: "10px",
@@ -186,66 +178,67 @@ const Kits = () => {
                     objectFit: "cover",
                   }}
                 />
-                <h3 style={{ color: "#C77B30", marginBottom: "0.4rem" }}>
-                  {kit.name}
+
+                <h3 style={{ color: "#C77B30", marginBottom: "0.6rem" }}>
+                  {service.name}
                 </h3>
-                <p style={{ color: "#5C432A", fontSize: "0.95rem" }}>
-                  {kit.description}
-                </p>
+
+                {/* <p
+                  style={{
+                    color: "#5C432A",
+                    fontSize: "0.95rem",
+                    lineHeight: "1.6",
+                  }}
+                >
+                  {service.description}
+                </p> */}
+
                 <p
                   style={{
                     color: "#6B5336",
                     fontSize: "0.85rem",
-                    marginTop: "0.5rem",
-                  }}
-                >
-                  Occasion: {kit.occasion}
-                </p>
-                <p
-                  style={{
-                    fontWeight: "600",
-                    color: "#C77B30",
                     marginTop: "0.7rem",
                   }}
                 >
-                  ₹{kit.price} • {kit.totalItems} items
+                  {service.occasion}
                 </p>
 
                 <div
                   style={{
-                    marginTop: "1rem",
+                    marginTop: "1.2rem",
                     display: "flex",
-                    gap: "0.5rem",
+                    gap: "0.6rem",
                     justifyContent: "center",
                   }}
                 >
-                  <Link to={`/kits/${kit.id}`}>
+                  <Link to={`/kits/${service.id}`}>
                     <button
                       style={{
                         background: "#C77B30",
                         color: "#FFF8EC",
-                        padding: "0.5rem 1rem",
+                        padding: "0.5rem 1.2rem",
                         borderRadius: "5px",
                         border: "none",
                         cursor: "pointer",
                       }}
                     >
-                      View Details
+                      Know More
                     </button>
                   </Link>
+
                   <button
-                    onClick={() => handleOrderWhatsApp(kit)}
+                    onClick={() => handleOrderWhatsApp(service)}
                     style={{
                       background: "#E6A74E",
                       color: "#FFF",
-                      padding: "0.5rem 1rem",
+                      padding: "0.5rem 1.2rem",
                       borderRadius: "5px",
                       border: "none",
                       cursor: "pointer",
                       fontWeight: "bold",
                     }}
                   >
-                    Order on WhatsApp
+                    Book on WhatsApp
                   </button>
                 </div>
               </div>
@@ -254,7 +247,7 @@ const Kits = () => {
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* STORY SECTION */}
       <section
         style={{
           background: "#F4E9D8",
@@ -263,8 +256,9 @@ const Kits = () => {
         }}
       >
         <h2 style={{ color: "#C77B30", marginBottom: "1rem" }}>
-          🌸 The Journey that Lit the Lamp
+          🌸 A Thought That Became Satvik Havan
         </h2>
+
         <p
           style={{
             color: "#5C432A",
@@ -274,14 +268,21 @@ const Kits = () => {
             fontSize: "1.05rem",
           }}
         >
-          Satvik Havan started with these humble kits — a vision to make every
-          home temple-ready, every pooja effortless, and every devotee stress-free.  
-          Today, our journey extends into Ayurvedic and herbal products,  
-          but these kits remain our roots — a reminder that **faith should be simple and pure**.
+          Satvik Havan started with one simple thought —
+          people should be able to perform pooja without stress or confusion.
+          <br />
+          <br />
+          Over time, we realised that pooja is not about items,
+          but about guidance, tradition, and trust.
+          <br />
+          <br />
+          Today, Satvik Havan stands with you as a calm companion
+          in your spiritual journey — from home pooja to vastu guidance
+          and meaningful conversations with Pandit Ji.
         </p>
       </section>
 
-      {/* Call to Action */}
+      {/* FINAL CTA */}
       <section
         style={{
           textAlign: "center",
@@ -290,32 +291,31 @@ const Kits = () => {
         }}
       >
         <h2 style={{ color: "#C77B30" }}>
-          🙏 Bring Divine Convenience Home Today
+          Let Us Guide You in Your Pooja
         </h2>
+
         <p style={{ color: "#5C432A", marginTop: "1rem" }}>
-          Whether it’s a small daily pooja or a grand family ritual —  
-          Satvik Havan Kits ensure that devotion comes without disturbance.
+          If you are unsure about which pooja, Pandit Ji,
+          or process is right for you — just talk to us.
+          <br />
+          We will take care of the rest.
         </p>
-        <a
-          href="https://wa.me/918076170877?text=I want to know more about Satvik Pooja Kits"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <button
+          onClick={() => handleOrderWhatsApp({ name: "Pooja Guidance" })}
+          style={{
+            marginTop: "1.5rem",
+            background: "#E6A74E",
+            color: "#FFF",
+            padding: "1rem 2rem",
+            borderRadius: "6px",
+            border: "none",
+            cursor: "pointer",
+            fontWeight: "bold",
+          }}
         >
-          <button
-            style={{
-              marginTop: "1.5rem",
-              background: "#E6A74E",
-              color: "#FFF",
-              padding: "1rem 2rem",
-              borderRadius: "6px",
-              border: "none",
-              cursor: "pointer",
-              fontWeight: "bold",
-            }}
-          >
-            📞 Connect on WhatsApp
-          </button>
-        </a>
+          📞 Connect on WhatsApp
+        </button>
       </section>
     </div>
   );

@@ -15,7 +15,7 @@ const Footer = () => {
             Pure herbs, sacred kits, and divine services.
           </p>
           <div className="contact-mini">
-            <span><FaEnvelope /> support@satvikhavan.com</span>
+            <span><FaEnvelope /> satvikhavan@gmail.com</span>
             <span><FaMapMarkerAlt /> Delhi, India</span>
           </div>
         </div>
@@ -25,9 +25,9 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/kits">Pooja Kits</a></li>
             <li><a href="/herbs">Sacred Herbs</a></li>
             <li><a href="/about">Our Story</a></li>
+            <li><a href="/contact">Contact us</a></li>
           </ul>
         </div>
 
@@ -48,8 +48,8 @@ const Footer = () => {
           <p>Join our spiritual community</p>
           <div className="social-icons">
             <a href="https://wa.me/918076170877" className="wa" aria-label="WhatsApp"><FaWhatsapp /></a>
-            <a href="https://instagram.com/satvikhavan" className="ig" aria-label="Instagram"><FaInstagram /></a>
-            <a href="https://youtube.com/@satvikhavan" className="yt" aria-label="YouTube"><FaYoutube /></a>
+            <a href="https://www.instagram.com/satvik.havan?igsh=c29laXVocWF3cmg5" className="ig" aria-label="Instagram"><FaInstagram /></a>
+            {/* <a href="https://youtube.com/@satvikhavan" className="yt" aria-label="YouTube"><FaYoutube /></a> */}
           </div>
         </div>
       </div>

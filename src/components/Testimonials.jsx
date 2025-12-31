@@ -3,28 +3,28 @@ import React from "react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Riya Sharma",
-      location: "London, UK",
+      name: "Rohit S.",
+      location: "Delhi",
       quote:
-        "Even thousands of miles away, Satvik Havan made me feel like home. The puja kit was pure perfection!",
+        "Satvik Havan ne pooja ki poori vyavastha sambhali. Pandit Ji bahut shaant aur samajhdaar the. Humein bas shraddha ke saath pooja karni thi.",
       image:
-        "https://media.gettyimages.com/id/1317804578/photo/one-businesswoman-headshot-smiling-at-the-camera.jpg?s=612x612&w=gi&k=20&c=tFkDOWmEyqXQmUHNxkuR5TsmRVLi5VZXYm3mVsjee0E=",
+        "https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_98d0a25a0e58166180b8cd492c5708e5_ProductImage_PT03",
     },
     {
-      name: "Amit Verma",
-      location: "Mumbai, India",
+      name: "Anjali M.",
+      location: "Mumbai",
       quote:
-        "I ordered the Griha Pravesh Kit — it had every item, perfectly packed with devotion. Truly Satvik!",
+        "Humein pehle pata nahi tha kaunsi pooja kaise hogi. Team ne sab kuch clearly samjhaya aur poora sahyog diya.",
       image:
-        "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3Dt",
+        "https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_998237ddb64dc7d0d27d0ac084d3d48b_ProductImage_PT02",
     },
     {
-      name: "Priya Mehta",
-      location: "Delhi, India",
+      name: "Amit K.",
+      location: "Pune",
       quote:
-        "Pandit Ji’s online puja guidance was soulful and peaceful. No stress, just pure devotion.",
+        "Ghar par shanti aur vyavastha dono mili. Pooja bina kisi tension ke poori hui.",
       image:
-        "https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=",
+        "https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_2577abf1ee7ee2a8dff522257d8e6a2c_ProductImage_PT02",
     },
   ];
 

@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
       <img src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <p>{product.price}</p>
-      <button onClick={handleOrder}>Order on WhatsApp</button>
+      {/* <button onClick={handleOrder}>Order on WhatsApp</button> */}
     </div>
   );
 };

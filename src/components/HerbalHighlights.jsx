@@ -4,11 +4,11 @@ import ProductCard from './ProductCard';
 
 const HerbalHighlights = () => {
   const herbs = [
-    { name: "Mulethi (Licorice Root)", quantity: "100g", price: "₹199", image: 'https://m.media-amazon.com/images/I/51vSEnae0SL.jpg' },
-    { name: "Ashwagandha Root", quantity: "100g", price: "₹229", image: 'https://m.media-amazon.com/images/I/51mRwVSguiL.jpg' },
-    { name: "Jatamansi", quantity: "100g", price: "₹299", image: 'https://m.media-amazon.com/images/I/613hLNlT83L.jpg' },
-    { name: "Guggul + Loban Combo", quantity: "Pack Combo", price: "₹349", image: 'https://m.media-amazon.com/images/I/510SN7T6IjL.jpg' },
-    { name: "Bhimseni Camphor", quantity: "100g", price: "₹249", image: 'https://m.media-amazon.com/images/I/515SYij6cTL.jpg' },
+    { name: "Mulethi (Licorice Root)", quantity: "100g", image: 'https://m.media-amazon.com/images/I/61W9A6gAaTL.jpg' },
+    { name: "Ashwagandha Root", quantity: "100g", image: 'https://m.media-amazon.com/images/I/61Kh6JGq-FL.jpg' },
+    { name: "Manjistha Powder", quantity: "100g", image: 'https://m.media-amazon.com/images/I/516EsK8WHQL.jpg' },
+    { name: "Brahmi Powder", quantity: "Pack Combo", image: 'https://m.media-amazon.com/images/I/51JQbruhUTL.jpg' },
+    { name: "Jatamansi Root", quantity: "100g", image: 'https://m.media-amazon.com/images/I/61CFXvYV-dL.jpg' },
   ];
 
   return (

@@ -3,24 +3,24 @@ import React from "react";
 const TrustRibbon = () => {
   const trustPoints = [
     {
-      icon: "🌿",
-      title: "Pure Ingredients",
-      desc: "100% natural and spiritually sourced",
+      icon: "👨‍🏫",
+      title: "Experienced & Verified Pandit Ji",
+      desc: "Trusted spiritual guides with years of experience",
     },
     {
       icon: "🪔",
-      title: "Satvik Certified",
-      desc: "Blessed & verified by authentic Pandits",
+      title: "Pooja as per Tradition & Family Custom",
+      desc: "Following authentic rituals and family preferences",
     },
     {
-      icon: "💰",
-      title: "Easy COD",
-      desc: "Cash on delivery available across India",
+      icon: "🤝",
+      title: "End-to-End Arrangement",
+      desc: "Complete coordination from start to finish",
     },
     {
-      icon: "🚚",
-      title: "Fast Dispatch",
-      desc: "Shipped with care within 24-48 hours",
+      icon: "✨",
+      title: "Simple & Transparent Process",
+      desc: "Clear communication and honest guidance",
     },
   ];
 

@@ -2,7 +2,8 @@ import React from 'react';
 // import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import TrustRibbon from '../components/TrustRibbon';
-import KitsSection from '../components/KitsSection';
+import MainServices from '../components/MainServices';
+import HowItWorks from '../components/HowItWorks';
 import BookPanditSection from '../components/BookPanditSection';
 import HerbalHighlights from '../components/HerbalHighlights';
 import Testimonials from '../components/Testimonials';
@@ -27,7 +28,9 @@ const Home = () => {
       <div className="animated-divider"></div>
       <TrustRibbon />
       <div className="animated-divider"></div>
-      <KitsSection />
+      <MainServices />
+      <div className="animated-divider"></div>
+      <HowItWorks />
       <div className="animated-divider"></div>
       <BookPanditSection />
       <div className="animated-divider"></div>

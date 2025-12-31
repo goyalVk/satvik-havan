@@ -4,26 +4,108 @@ import { useParams, Link } from "react-router-dom";
 export default function HerbDetail() {
   const { id } = useParams();
 
-  const products = [
-    { id: 1, name: "Mulethi (Licorice Root)", quantity: "100g", price: "₹199", description: "In Ayurveda, Mulethi is celebrated as a rasayana herb — soothing the throat, aiding digestion, and purifying the body. It balances Kapha and Vata doshas, supporting vitality and calmness.", image: "https://m.media-amazon.com/images/I/51qg8U4zFyL.jpg" },
-    { id: 2, name: "Ashwagandha Root", quantity: "100g", price: "₹229", description: "Ashwagandha is known as the 'Indian Ginseng' — a powerful adaptogen that boosts energy, improves stamina, and relieves stress. It balances Vata dosha and supports strength and mental peace.", image: "https://m.media-amazon.com/images/I/61Kh6JGq-FL.jpg" },
-    { id: 3, name: "Amla Reetha Shikakai Mix", quantity: "100g", price: "₹179", description: "Amla, Reetha, and Shikakai are nature’s gift for hair and scalp health. Rich in antioxidants, they purify and nourish hair roots, promoting shine and reducing dandruff naturally.", image: "https://m.media-amazon.com/images/I/61sk8+s9jdL.jpg" },
-    { id: 4, name: "Multani Mitti (Whole Chunks)", quantity: "500g + Free Bowl", price: "₹199", description: "Multani Mitti, or Fuller’s Earth, is known for its cooling and cleansing properties. It absorbs impurities, tightens skin, and promotes natural glow by balancing excess Pitta.", image: "https://m.media-amazon.com/images/I/515SYij6cTL.jpg" },
-    { id: 5, name: "Neem Powder", quantity: "200g + Free Bowl", price: "₹189", description: "Neem is Ayurveda’s most sacred antibacterial herb. It purifies the blood, clears acne, and supports overall detoxification — balancing both Pitta and Kapha doshas.", image: "https://m.media-amazon.com/images/I/51JQbruhUTL.jpg" },
-    { id: 6, name: "Dry Rose Petals", quantity: "100g + Free Bowl", price: "₹159", description: "Dried Rose Petals are cooling, aromatic, and soothing to the heart and mind. They pacify Pitta dosha, enhance skin beauty, and uplift emotional well-being.", image: "https://m.media-amazon.com/images/I/516EsK8WHQL.jpg" },
-    { id: 7, name: "Bhimseni Camphor", quantity: "100g", price: "₹249", description: "Bhimseni Camphor purifies the atmosphere and uplifts energy. It’s used in pooja, havan, and aromatherapy — promoting calmness, clarity, and spiritual awakening.", image: "https://m.media-amazon.com/images/I/515SYij6cTL.jpg" },
-    { id: 8, name: "Amla Powder", quantity: "200g", price: "₹169", description: "Amla, the Indian Gooseberry, is a rejuvenating superfruit rich in Vitamin C. It strengthens immunity, nourishes hair, and supports digestion — balancing all three doshas.", image: "https://m.media-amazon.com/images/I/51cRsamHFSL.jpg" },
-    { id: 9, name: "Multani Mitti Powder", quantity: "500g", price: "₹199", description: "Finely powdered Multani Mitti helps remove excess oil, unclog pores, and bring a natural radiance to the skin — a timeless Ayurvedic beauty secret.", image: "https://m.media-amazon.com/images/I/51qg8U4zFyL.jpg" },
-    { id: 10, name: "Ratanjot (Alkanet Root)", quantity: "100g", price: "₹199", description: "Ratanjot is used for its natural color and cooling properties. Traditionally, it’s used in oils and remedies to soothe skin irritation and purify blood.", image: "https://m.media-amazon.com/images/I/613hLNlT83L.jpg" },
-    { id: 11, name: "Kapoor Kachri", quantity: "100g", price: "₹219", description: "Kapoor Kachri enhances hair fragrance, strength, and natural shine. It’s a natural hair tonic known to stimulate growth and maintain scalp health.", image: "https://m.media-amazon.com/images/I/61CFXvYV-dL.jpg" },
-    { id: 12, name: "Agar Tagar", quantity: "100g", price: "₹249", description: "Agar Tagar, or Valerian Root, is a grounding herb used to calm the mind, reduce anxiety, and promote restful sleep — harmonizing Vata dosha.", image: "https://m.media-amazon.com/images/I/51ZRQNUVgmL.jpg" },
-    { id: 13, name: "Jatamansi Root", quantity: "100g", price: "₹299", description: "Jatamansi is a medhya rasayana — a brain tonic that promotes mental calmness, clarity, and deep sleep. It balances all three doshas and supports emotional healing.", image: "https://m.media-amazon.com/images/I/51vSEnae0SL.jpg" },
-    { id: 14, name: "Guggul + Loban Combo", quantity: "200g", price: "₹199", description: "This sacred resin blend purifies the aura and atmosphere during pooja and meditation. It enhances spiritual vibrations and brings inner peace.", image: "https://m.media-amazon.com/images/I/61W9A6gAaTL.jpg" },
-    { id: 15, name: "Kamarkas (Palash Gond)", quantity: "200g", price: "₹189", description: "Kamarkas is known for strengthening postnatal women and improving reproductive health. It restores energy, tones muscles, and balances the system.", image: "https://m.media-amazon.com/images/I/51mRwVSguiL.jpg" },
-    { id: 16, name: "Kutki Root (Picrorhiza kurroa)", quantity: "100g", price: "₹299", description: "Kutki is an Ayurvedic liver protector that supports detoxification and immunity. It’s a potent Pitta-pacifying herb with strong antioxidant properties.", image: "https://m.media-amazon.com/images/I/61Kh6JGq-FL.jpg" },
-    { id: 17, name: "Manjistha Powder", quantity: "200g", price: "₹189", description: "Manjistha purifies the blood, supports clear skin, and improves lymphatic circulation. It’s one of Ayurveda’s most trusted herbs for detox and radiance.", image: "https://m.media-amazon.com/images/I/61gUTZp3GzL.jpg" },
-    { id: 18, name: "Brahmi Powder", quantity: "200g", price: "₹179", description: "Brahmi is a revered herb for memory, focus, and stress relief. It nourishes the nervous system and enhances spiritual clarity through mindfulness.", image: "https://m.media-amazon.com/images/I/515SYij6cTL.jpg" }
-  ];
+const products = [
+  {
+    id: 1,
+    name: "Mulethi (Licorice Root)",
+    quantity: "100g",
+    price: "₹99",
+    description:
+      "Mulethi is a traditional Ayurvedic rasayana herb known for soothing the throat, aiding digestion, and purifying the system. It helps balance Vata and Kapha doshas naturally.",
+    image: "https://m.media-amazon.com/images/I/61W9A6gAaTL.jpg"
+  },
+  {
+    id: 2,
+    name: "Ashwagandha Root",
+    quantity: "100g",
+    price: "₹149",
+    description:
+      "Ashwagandha is a powerful adaptogenic root that helps reduce stress, improve stamina, and support overall vitality. Widely used for mental and physical balance.",
+    image: "https://m.media-amazon.com/images/I/61Kh6JGq-FL.jpg"
+  },
+  {
+    id: 3,
+    name: "Amla Reetha Shikakai Mix",
+    quantity: "100g",
+    price: "₹99",
+    description:
+      "A traditional herbal blend for natural hair cleansing. Strengthens hair roots, reduces dandruff, and promotes healthy shine without chemicals.",
+    image: "https://m.media-amazon.com/images/I/61gUTZp3GzL.jpg"
+  },
+  {
+    id: 4,
+    name: "Neem Powder",
+    quantity: "200g + Free Bowl",
+    price: "₹149",
+    description:
+      "Neem is known for its strong antibacterial and purifying properties. Ideal for skincare, hair care, and traditional cleansing rituals.",
+    image: "https://m.media-amazon.com/images/I/51mRwVSguiL.jpg"
+  },
+  {
+    id: 5,
+    name: "Dry Rose Petals",
+    quantity: "100g + Free Bowl",
+    price: "₹149",
+    description:
+      "Naturally aromatic rose petals used in pooja, skincare, and herbal beauty rituals. Cooling in nature and soothing for the mind.",
+    image: "https://m.media-amazon.com/images/I/51vSEnae0SL.jpg"
+  },
+  {
+    id: 6,
+    name: "Ratanjot (Alkanet Root)",
+    quantity: "50g",
+    price: "₹90",
+    description:
+      "A traditional Ayurvedic root used for natural coloring in oils and remedies. Known for its cooling and skin-soothing properties.",
+    image: "https://m.media-amazon.com/images/I/613hLNlT83L.jpg"
+  },
+  {
+    id: 7,
+    name: "Kapoor Kachri",
+    quantity: "100g",
+    price: "₹199",
+    description:
+      "Aromatic root powder used for hair care. Adds natural fragrance, improves volume, and strengthens hair roots.",
+    image: "https://m.media-amazon.com/images/I/51qg8U4zFyL.jpg"
+  },
+  {
+    id: 8,
+    name: "Jatamansi Root",
+    quantity: "100g",
+    price: "₹149",
+    description:
+      "A calming Ayurvedic herb known for promoting sound sleep, reducing mental stress, and supporting emotional balance.",
+    image: "https://m.media-amazon.com/images/I/61CFXvYV-dL.jpg"
+  },
+  {
+    id: 9,
+    name: "Kamarkas (Palash Gond)",
+    quantity: "100g",
+    price: "₹149",
+    description:
+      "Traditionally used in postpartum nutrition and strengthening laddoos. Supports recovery, strength, and nourishment.",
+    image: "https://m.media-amazon.com/images/I/515SYij6cTL.jpg"
+  },
+  {
+    id: 10,
+    name: "Manjistha Powder",
+    quantity: "100g",
+    price: "₹129",
+    description:
+      "Manjistha is well-known for blood purification and skin health. Helps reduce acne and supports natural glow.",
+    image: "https://m.media-amazon.com/images/I/516EsK8WHQL.jpg"
+  },
+  {
+    id: 11,
+    name: "Brahmi Powder",
+    quantity: "100g",
+    price: "₹99",
+    description:
+      "Brahmi supports memory, focus, and stress relief. Also beneficial for hair nourishment and scalp health.",
+    image: "https://m.media-amazon.com/images/I/51JQbruhUTL.jpg"
+  }
+];
+
 
   const product = products.find((p) => p.id === Number(id));
   if (!product) return <h2 style={{ textAlign: "center", padding: "4rem" }}>Product not found</h2>;

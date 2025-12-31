@@ -50,9 +50,9 @@ export default function Navbar() {
         <div className="nav-menu">
           <ul className={`nav-links ${isMobileMenuOpen ? 'nav-links-open' : ''}`}>
             <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
-            <li><Link to="/kits" onClick={closeMobileMenu}>Kits</Link></li>
-            <li><Link to="/herbs" onClick={closeMobileMenu}>Herbs</Link></li>
             <li><Link to="/booking" onClick={closeMobileMenu}>Book Pandit Ji</Link></li>
+            {/* <li><Link to="/kits" onClick={closeMobileMenu}>Pooja Services</Link></li> */}
+            <li><Link to="/herbs" onClick={closeMobileMenu}>Herbs</Link></li>
             <li><Link to="/about" onClick={closeMobileMenu}>About</Link></li>
             <li><Link to="/contact" onClick={closeMobileMenu}>Contact</Link></li>
           </ul>

@@ -258,14 +258,14 @@ export default function Contact() {
           {[
             {
               title: "WhatsApp",
-              detail: "+91 8076170877",
+              detail: "+91 8076-1708-77",
               link: "https://wa.me/918076170877",
               icon: "💬",
             },
             {
               title: "Email",
-              detail: "support@satvikhavan.com",
-              link: "mailto:support@satvikhavan.com",
+              detail: "satvikhavan@gmail.com",
+              link: "mailto:satvikhavan@gmail.com",
               icon: "📧",
             },
             {
