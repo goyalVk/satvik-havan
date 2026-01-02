@@ -21,10 +21,29 @@ const Home = () => {
         ))}
       </div>
       {/* <Navbar /> */}
-      <div className="hero-background" style={{ position: 'relative', height: '100vh', backgroundImage: `url('https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_90663842f250ccdd57d7af25770c8a2e_ProductImage_PT03')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.4)', zIndex: 1 }}></div>
+    <div
+        className="hero-background"
+        style={{
+          position: 'relative',
+          height: '100vh',
+          backgroundImage: `
+            linear-gradient(
+              rgba(246,196,83,0.55),
+              rgba(246,196,83,0.55)
+            ),
+            url('https://imagine-public.x.ai/imagine-public/images/2b2b5859-8283-46ea-a946-dba33faf8beb.png?cache=1&dl=1')
+          `,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+      <div style={{ position: 'relative', zIndex: 2 }}>
         <Hero />
       </div>
+    </div>
+
+
       <div className="animated-divider"></div>
       <TrustRibbon />
       <div className="animated-divider"></div>

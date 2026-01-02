@@ -9,19 +9,21 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1
+              <h1>
+  Har Pooja, <span style={{ color: '#8C1D18' }}>Vishwas</span> Aur <span style={{ color: '#8C1D18' }}>Sukoon</span> Ke Saath
+</h1>
+
+
+                    <p
           style={{
-            color: '#2c2c2c',
-            textShadow: '2px 2px 4px rgba(255,255,255,0.8)',
+            color: '#030500ff',
+            fontSize: '1.2rem',
+            lineHeight: '1.4',
+            marginTop: '10px',
+            fontWeight: '500'
           }}
         >
-          Har Pooja, Vishwas Aur Sukoon Ke Saath
-        </h1>
-
-        <p>
-          For moments when family and tradition come first.
-          <br />
-          we take care of the rest.
+          Pooja aapki, taiyari hamari
         </p>
 
         <div className="hero-buttons">
