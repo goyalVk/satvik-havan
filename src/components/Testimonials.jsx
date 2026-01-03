@@ -12,7 +12,7 @@ const Testimonials = () => {
     },
     {
       name: "Anjali M.",
-      location: "Mumbai",
+      location: "Delhi",
       quote:
         "Humein pehle pata nahi tha kaunsi pooja kaise hogi. Team ne sab kuch clearly samjhaya aur poora sahyog diya.",
       image:
@@ -20,7 +20,7 @@ const Testimonials = () => {
     },
     {
       name: "Amit K.",
-      location: "Pune",
+      location: "Noida",
       quote:
         "Ghar par shanti aur vyavastha dono mili. Pooja bina kisi tension ke poori hui.",
       image:
