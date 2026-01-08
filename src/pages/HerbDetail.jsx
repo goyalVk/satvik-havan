@@ -10,8 +10,7 @@ const products = [
     name: "Mulethi (Licorice Root)",
     quantity: "100g",
     price: "₹99",
-    description:
-      "Mulethi is a traditional Ayurvedic rasayana herb known for soothing the throat, aiding digestion, and purifying the system. It helps balance Vata and Kapha doshas naturally.",
+    description: "Soothes throat, aids digestion, and purifies the system.",
     image: "https://m.media-amazon.com/images/I/61W9A6gAaTL.jpg"
   },
   {
@@ -19,8 +18,7 @@ const products = [
     name: "Ashwagandha Root",
     quantity: "100g",
     price: "₹149",
-    description:
-      "Ashwagandha is a powerful adaptogenic root that helps reduce stress, improve stamina, and support overall vitality. Widely used for mental and physical balance.",
+    description: "Boosts energy and reduces stress — perfect for Ayurvedic wellness.",
     image: "https://m.media-amazon.com/images/I/61Kh6JGq-FL.jpg"
   },
   {
@@ -28,8 +26,7 @@ const products = [
     name: "Amla Reetha Shikakai Mix",
     quantity: "100g",
     price: "₹99",
-    description:
-      "A traditional herbal blend for natural hair cleansing. Strengthens hair roots, reduces dandruff, and promotes healthy shine without chemicals.",
+    description: "Natural hair cleanser and conditioner made from traditional herbs.",
     image: "https://m.media-amazon.com/images/I/61gUTZp3GzL.jpg"
   },
   {
@@ -37,8 +34,7 @@ const products = [
     name: "Neem Powder",
     quantity: "200g + Free Bowl",
     price: "₹149",
-    description:
-      "Neem is known for its strong antibacterial and purifying properties. Ideal for skincare, hair care, and traditional cleansing rituals.",
+    description: "Powerful antibacterial herb for skincare and purification rituals.",
     image: "https://m.media-amazon.com/images/I/51mRwVSguiL.jpg"
   },
   {
@@ -46,8 +42,7 @@ const products = [
     name: "Dry Rose Petals",
     quantity: "100g + Free Bowl",
     price: "₹149",
-    description:
-      "Naturally aromatic rose petals used in pooja, skincare, and herbal beauty rituals. Cooling in nature and soothing for the mind.",
+    description: "Used in pooja, aroma, and Ayurvedic beauty rituals.",
     image: "https://m.media-amazon.com/images/I/51vSEnae0SL.jpg"
   },
   {
@@ -55,8 +50,7 @@ const products = [
     name: "Ratanjot (Alkanet Root)",
     quantity: "50g",
     price: "₹90",
-    description:
-      "A traditional Ayurvedic root used for natural coloring in oils and remedies. Known for its cooling and skin-soothing properties.",
+    description: "Traditional herb used for natural coloring and Ayurvedic remedies.",
     image: "https://m.media-amazon.com/images/I/613hLNlT83L.jpg"
   },
   {
@@ -64,8 +58,7 @@ const products = [
     name: "Kapoor Kachri",
     quantity: "100g",
     price: "₹199",
-    description:
-      "Aromatic root powder used for hair care. Adds natural fragrance, improves volume, and strengthens hair roots.",
+    description: "Excellent for hair fragrance, volume, and Ayurvedic hair care.",
     image: "https://m.media-amazon.com/images/I/51qg8U4zFyL.jpg"
   },
   {
@@ -73,8 +66,7 @@ const products = [
     name: "Jatamansi Root",
     quantity: "100g",
     price: "₹149",
-    description:
-      "A calming Ayurvedic herb known for promoting sound sleep, reducing mental stress, and supporting emotional balance.",
+    description: "Supports sleep, reduces stress, and enhances mental calmness.",
     image: "https://m.media-amazon.com/images/I/61CFXvYV-dL.jpg"
   },
   {
@@ -82,8 +74,7 @@ const products = [
     name: "Kamarkas (Palash Gond)",
     quantity: "100g",
     price: "₹149",
-    description:
-      "Traditionally used in postpartum nutrition and strengthening laddoos. Supports recovery, strength, and nourishment.",
+    description: "Strengthening herb used in postpartum laddu and traditional nutrition.",
     image: "https://m.media-amazon.com/images/I/515SYij6cTL.jpg"
   },
   {
@@ -91,8 +82,7 @@ const products = [
     name: "Manjistha Powder",
     quantity: "100g",
     price: "₹129",
-    description:
-      "Manjistha is well-known for blood purification and skin health. Helps reduce acne and supports natural glow.",
+    description: "A powerful herb for blood purification, acne control & skin glow.",
     image: "https://m.media-amazon.com/images/I/516EsK8WHQL.jpg"
   },
   {
@@ -100,9 +90,128 @@ const products = [
     name: "Brahmi Powder",
     quantity: "100g",
     price: "₹99",
-    description:
-      "Brahmi supports memory, focus, and stress relief. Also beneficial for hair nourishment and scalp health.",
+    description: "Supports memory, focus, and stress relief; nourishes hair naturally.",
     image: "https://m.media-amazon.com/images/I/51JQbruhUTL.jpg"
+  },
+  {
+    id: 12,
+    name: "Satvik Havan Amalaki (Amla) Whole 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Amalaki (Amla / Indian Gooseberry) is one of the most revered fruits in Ayurveda.",
+    image: "https://m.media-amazon.com/images/I/61x-ie6rohL.jpg"
+  },
+  {
+    id: 13,
+    name: "Satvik Havan Musta Powder 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Musta (Nutgrass) supports digestion, metabolism, and women’s wellness.",
+    image: "https://m.media-amazon.com/images/I/51FgnpJ3NaL.jpg"
+  },
+  {
+    id: 14,
+    name: "Satvik Havan Guduchi (Giloy) Powder 100g",
+    quantity: "100g",
+    price: "₹111",
+    description: "Guduchi is traditionally used for immunity support and detoxification.",
+    image: "https://m.media-amazon.com/images/I/51IHfjJeP6L.jpg"
+  },
+  {
+    id: 15,
+    name: "Satvik Havan Choti Pippali 100g",
+    quantity: "100g",
+    price: "₹149",
+    description: "Supports respiratory health and digestion.",
+    image: "https://m.media-amazon.com/images/I/61ddAtZhfQL.jpg"
+  },
+  {
+    id: 16,
+    name: "Satvik Havan Trikatu Churna 100g",
+    quantity: "100g",
+    price: "₹149",
+    description: "Enhances digestion, metabolism, and respiratory health.",
+    image: "https://m.media-amazon.com/images/I/51mrZVXIt4L.jpg"
+  },
+  {
+    id: 17,
+    name: "Satvik Havan Dashmool Powder 100g",
+    quantity: "100g",
+    price: "₹149",
+    description: "Used for inflammation relief and vitality.",
+    image: "https://m.media-amazon.com/images/I/51Bfchj59LL.jpg"
+  },
+  {
+    id: 18,
+    name: "Satvik Havan Kutaj Chaal 100g",
+    quantity: "100g",
+    price: "₹149",
+    description: "Effective for digestive disorders and gut balance.",
+    image: "https://m.media-amazon.com/images/I/617zEiB63dL.jpg"
+  },
+  {
+    id: 19,
+    name: "Satvik Havan Nagarmotha Root 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Supports digestion and metabolic balance.",
+    image: "https://m.media-amazon.com/images/I/612F+Bux38L.jpg"
+  },
+  {
+    id: 20,
+    name: "Satvik Havan Vidanga 100g",
+    quantity: "100g",
+    price: "₹199",
+    description: "Trusted herb for intestinal cleansing.",
+    image: "https://m.media-amazon.com/images/I/61ViqnL9D1L.jpg"
+  },
+  {
+    id: 21,
+    name: "Satvik Havan Hadjod 100g",
+    quantity: "100g",
+    price: "₹121",
+    description: "Supports bone healing and fracture recovery.",
+    image: "https://m.media-amazon.com/images/I/61tjTzuRDrL.jpg"
+  },
+  {
+    id: 22,
+    name: "Satvik Havan Arjun Chal 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Respected herb for heart health.",
+    image: "https://m.media-amazon.com/images/I/61-Mk13bGmL.jpg"
+  },
+  {
+    id: 23,
+    name: "Satvik Havan Varun Chal 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Used for kidney and urinary wellness.",
+    image: "https://m.media-amazon.com/images/I/51nJ0hE1j8L.jpg"
+  },
+  {
+    id: 24,
+    name: "Satvik Havan Gokhru 100g",
+    quantity: "100g",
+    price: "₹111",
+    description: "Supports stamina, kidney cleansing, and vitality.",
+    image: "https://m.media-amazon.com/images/I/51qbHRV5SeL.jpg"
+  },
+  {
+    id: 25,
+    name: "Satvik Havan Chot Sajji (Sajji Kali) 100g",
+    quantity: "100g",
+    price: "₹121",
+    description: "Used for acidity relief and digestive balance.",
+    image: "https://m.media-amazon.com/images/I/51sYJc87S9L.jpg"
+  },
+  {
+    id: 26,
+    name: "Satvik Havan Amba Haldi Powder 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Traditional herb for glowing skin and skincare.",
+    image: "https://m.media-amazon.com/images/I/51hKv1bxHAL.jpg"
   }
 ];
 

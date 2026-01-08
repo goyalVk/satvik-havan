@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/global.css";
+import { Helmet } from "react-helmet-async";
+
 
 export default function Herbs() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -93,8 +95,129 @@ const products = [
     price: "₹99",
     description: "Supports memory, focus, and stress relief; nourishes hair naturally.",
     image: "https://m.media-amazon.com/images/I/51JQbruhUTL.jpg"
+  },
+  {
+    id: 12,
+    name: "Satvik Havan Amalaki (Amla) Whole 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Amalaki (Amla / Indian Gooseberry) is one of the most revered fruits in Ayurveda.",
+    image: "https://m.media-amazon.com/images/I/61x-ie6rohL.jpg"
+  },
+  {
+    id: 13,
+    name: "Satvik Havan Musta Powder 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Musta (Nutgrass) supports digestion, metabolism, and women’s wellness.",
+    image: "https://m.media-amazon.com/images/I/51FgnpJ3NaL.jpg"
+  },
+  {
+    id: 14,
+    name: "Satvik Havan Guduchi (Giloy) Powder 100g",
+    quantity: "100g",
+    price: "₹111",
+    description: "Guduchi is traditionally used for immunity support and detoxification.",
+    image: "https://m.media-amazon.com/images/I/51IHfjJeP6L.jpg"
+  },
+  {
+    id: 15,
+    name: "Satvik Havan Choti Pippali 100g",
+    quantity: "100g",
+    price: "₹149",
+    description: "Supports respiratory health and digestion.",
+    image: "https://m.media-amazon.com/images/I/61ddAtZhfQL.jpg"
+  },
+  {
+    id: 16,
+    name: "Satvik Havan Trikatu Churna 100g",
+    quantity: "100g",
+    price: "₹149",
+    description: "Enhances digestion, metabolism, and respiratory health.",
+    image: "https://m.media-amazon.com/images/I/51mrZVXIt4L.jpg"
+  },
+  {
+    id: 17,
+    name: "Satvik Havan Dashmool Powder 100g",
+    quantity: "100g",
+    price: "₹149",
+    description: "Used for inflammation relief and vitality.",
+    image: "https://m.media-amazon.com/images/I/51Bfchj59LL.jpg"
+  },
+  {
+    id: 18,
+    name: "Satvik Havan Kutaj Chaal 100g",
+    quantity: "100g",
+    price: "₹149",
+    description: "Effective for digestive disorders and gut balance.",
+    image: "https://m.media-amazon.com/images/I/617zEiB63dL.jpg"
+  },
+  {
+    id: 19,
+    name: "Satvik Havan Nagarmotha Root 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Supports digestion and metabolic balance.",
+    image: "https://m.media-amazon.com/images/I/612F+Bux38L.jpg"
+  },
+  {
+    id: 20,
+    name: "Satvik Havan Vidanga 100g",
+    quantity: "100g",
+    price: "₹199",
+    description: "Trusted herb for intestinal cleansing.",
+    image: "https://m.media-amazon.com/images/I/61ViqnL9D1L.jpg"
+  },
+  {
+    id: 21,
+    name: "Satvik Havan Hadjod 100g",
+    quantity: "100g",
+    price: "₹121",
+    description: "Supports bone healing and fracture recovery.",
+    image: "https://m.media-amazon.com/images/I/61tjTzuRDrL.jpg"
+  },
+  {
+    id: 22,
+    name: "Satvik Havan Arjun Chal 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Respected herb for heart health.",
+    image: "https://m.media-amazon.com/images/I/61-Mk13bGmL.jpg"
+  },
+  {
+    id: 23,
+    name: "Satvik Havan Varun Chal 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Used for kidney and urinary wellness.",
+    image: "https://m.media-amazon.com/images/I/51nJ0hE1j8L.jpg"
+  },
+  {
+    id: 24,
+    name: "Satvik Havan Gokhru 100g",
+    quantity: "100g",
+    price: "₹111",
+    description: "Supports stamina, kidney cleansing, and vitality.",
+    image: "https://m.media-amazon.com/images/I/51qbHRV5SeL.jpg"
+  },
+  {
+    id: 25,
+    name: "Satvik Havan Chot Sajji (Sajji Kali) 100g",
+    quantity: "100g",
+    price: "₹121",
+    description: "Used for acidity relief and digestive balance.",
+    image: "https://m.media-amazon.com/images/I/51sYJc87S9L.jpg"
+  },
+  {
+    id: 26,
+    name: "Satvik Havan Amba Haldi Powder 100g",
+    quantity: "100g",
+    price: "₹99",
+    description: "Traditional herb for glowing skin and skincare.",
+    image: "https://m.media-amazon.com/images/I/51hKv1bxHAL.jpg"
   }
 ];
+
 
 
 
@@ -109,6 +232,27 @@ const filteredProducts = products.filter((product) => {
 });
 
 return (
+  <>
+    <Helmet>
+      <title>Buy Ayurvedic Herbs Online in India | Satvik Havan</title>
+
+      <meta
+        name="description"
+        content="Buy pure Ayurvedic herbs online in India from Satvik Havan. Natural herbs for immunity, digestion, hair, skin and holistic wellness. Pan India delivery."
+      />
+
+      <link rel="canonical" href="https://satvikhavan.com/herbs" />
+
+      {/* Open Graph for WhatsApp / Facebook */}
+      <meta property="og:title" content="Buy Ayurvedic Herbs Online | Satvik Havan" />
+      <meta
+        property="og:description"
+        content="Explore authentic Ayurvedic herbs sourced with devotion. Trusted by Ayurvedic students and wellness seekers across India."
+      />
+      <meta property="og:url" content="https://satvikhavan.com/herbs" />
+      <meta property="og:type" content="website" />
+    </Helmet>
+    
   <div
     className="herbs-page"
     style={{
@@ -394,5 +538,6 @@ return (
       </a>
     </section>
   </div>
+  </>
 );
 }
