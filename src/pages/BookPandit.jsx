@@ -1,445 +1,253 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { waLink } from "../data/products";
 import "../styles/global.css";
+import panditPhoto from "../asset/hari-om-mishra-ji.jpeg";
+
+const SERVICES = [
+  {
+    image: "https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_4952cfc18858ddbdde02e42416fcec19_ProductImage_PT02",
+    name: "Home Puja & Havan",
+    price: "Starting ₹499",
+    desc: "Griha Pravesh, Satyanarayan Katha, Navratri, all festivals — complete samagri included. Pandit Ji handles everything.",
+    detail: "Book Pandit Ji for your home puja with complete pooja samagri, setup, and chanting guidance. We handle everything — you just focus on devotion. Perfect for daily pujas, festivals, havans, and family rituals.",
+  },
+  {
+    image: "https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_6d794f08da2f01e9f40cad11a3d18393_ProductImage_PT03",
+    name: "Corporate & Startup Puja",
+    price: "Starting ₹1,999",
+    desc: "Office inauguration, Lakshmi-Ganesh Puja, Navgrah Shanti, prosperity havans for new ventures.",
+    detail: "Ideal for offices, startups, and new ventures — this package includes Lakshmi-Ganesh Puja, Navgrah Shanti, and prosperity havans. Pandit Ji performs authentic rituals with all items included.",
+  },
+  {
+    image: "https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_718b2f42b4ca863a1796d12552210905_ProductImage_PT03",
+    name: "Online Pooja (e-Puja)",
+    price: "Starting ₹2,100",
+    desc: "Live Zoom pooja from Delhi — join from anywhere in the world.",
+    detail: "Our e-Puja service connects you directly with Pandit Ji via live Zoom sessions. Puja samagri shipped, mantra guidance in English or Hindi, optional recording provided.",
+  },
+  {
+    image: "https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_6e64cad70b4ceecdaaa825eb78908182_ProductImage_PT02",
+    name: "Vastu Consultation",
+    price: "Starting ₹999",
+    desc: "Balance your home or office with Panch Tatva — online and in-person sessions available.",
+    detail: "Expert Pandits and Vastu specialists offer both online and in-person consultations to correct energy imbalances.",
+  },
+];
 
 export default function BookPandit() {
-  const [selectedService, setSelectedService] = useState(null);
-  const whatsappBase = "https://wa.me/918076170877?text=";
-
-  const services = [
-    {
-      id: 1,
-      name: "Home Puja & Havan",
-      price: "Starting from ₹499 Only*",
-      desc: "From Griha Pravesh to Satyanarayan Katha — every ritual made effortless.",
-      detail:
-        "Book Pandit Ji for your home puja with complete pooja samagri, setup, and chanting guidance. We handle everything — you just focus on devotion. Perfect for daily pujas, festivals, havans, and family rituals.",
-    },
-    {
-      id: 2,
-      name: "Corporate & Startup Puja",
-      price: "Starting from ₹1999*",
-      desc: "Infuse your workspace with divine energy and prosperity.",
-      detail:
-        "Ideal for offices, startups, and new ventures — this package includes Lakshmi-Ganesh Puja, Navgrah Shanti, and prosperity havans. Pandit Ji performs authentic rituals with all items included, to bring harmony and success in business.",
-    },
-    {
-      id: 3,
-      name: "e-Puja",
-      price: "Starting from ₹2100*",
-      desc: "Experience sacred rituals from anywhere in the world — live from India.",
-      detail:
-        "Our e-Puja service connects you directly with Pandit Ji in India via live Zoom sessions. Puja samagri shipped globally, mantra guidance in English or Hindi, and optional recording provided. Stay connected to your roots, wherever you are.",
-    },
-    {
-      id: 4,
-      name: "Vastu Consultation",
-      price: "Starting from ₹999 Only*",
-      desc: "Balance your space with the harmony of the five elements (Panch Tatva).",
-      detail:
-        "Our expert Pandits and Vastu specialists offer both online and in-person consultations to correct energy imbalances in your home or office. Receive remedies for peace, prosperity, and spiritual alignment.",
-    },
-  ];
+  const [selected, setSelected] = useState(null);
 
   return (
-    <div
-      style={{
-        backgroundImage:
-          "url('https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_cbf77787d7a296dd36e2ec9fbc1df08b_ProductImage_PT03')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        color: "#3E2A1F",
-        minHeight: "100vh",
-      }}
-    >
-      {/* Hero Section */}
-      <section
-        style={{
-          textAlign: "center",
-          padding: "5rem 2rem 3rem",
-          background: "linear-gradient(135deg, #FFF8EC 0%, #FDE6B8 100%)",
-        }}
-      >
-        <h1
-          style={{
-            fontSize: "2.6rem",
-            marginBottom: "1rem",
-            color: "#C77B30",
-            fontWeight: "700",
-            lineHeight: "1.3",
-          }}
-        >
-          All Pujas. One Place.  
-          <br />Your Divine Journey Starts Here 🙏
-        </h1>
-        <p
-          style={{
-            color: "#5C432A",
-            maxWidth: "800px",
-            margin: "0 auto 2rem",
-            fontSize: "1.1rem",
-            lineHeight: "1.6",
-          }}
-        >
-          Whether it’s a sacred home ritual, a startup inauguration, or an
-          family connecting to their roots — <b>Satvik Havan</b> brings everything together.  
-          From <b>Pandit Ji</b> to <b>pooja samagri</b>, from <b>Vastu consultation</b> to <b>online ceremonies</b> —
-          we take care of every divine detail.
-        </p>
+    <>
+      <Helmet>
+        <title>Book Pandit Ji for Pooja Delhi NCR | Online Puja Services – Satvik Havan</title>
+        <meta name="description" content="Book an experienced Vedic Pandit Ji for home puja, havan, Griha Pravesh, Satyanarayan Katha in Delhi NCR. Online pooja available pan India. Book on WhatsApp." />
+        <link rel="canonical" href="https://satvikhavan.com/booking" />
+        <meta property="og:title" content="Book Pandit Ji for Pooja | Satvik Havan Delhi NCR" />
+        <meta property="og:description" content="Experienced Vedic pandits for all rituals in Delhi NCR. Online pooja available pan India." />
+        <meta property="og:url" content="https://satvikhavan.com/booking" />
+      </Helmet>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "1rem",
-            flexWrap: "wrap",
-          }}
-        >
-          <a
-            href={`${whatsappBase}${encodeURIComponent(
-              "Namaste! I want to book a Pandit Ji for puja."
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button
-              style={{
-                background: "#E6A74E",
-                color: "#FFF",
-                padding: "1rem 2rem",
-                borderRadius: "6px",
-                fontWeight: "bold",
-                border: "none",
-                cursor: "pointer",
-              }}
-            >
-              Book on WhatsApp
-            </button>
+      {/* Hero */}
+      <section className="page-hero">
+        <div className="delhi-badge">📍 Offline Service: Delhi NCR Only</div>
+        <h1>Book Pandit Ji for Pooja</h1>
+        <p>
+          All pujas, one place — from Griha Pravesh to Navratri.
+          In-home service in Delhi NCR. Online pooja available anywhere in India.
+        </p>
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap", marginTop: 28 }}>
+          <a href={waLink("Namaste! I want to book a Pandit Ji for puja.")} target="_blank" rel="noreferrer" className="btn-wa">
+            💬 Book on WhatsApp
           </a>
-          <button
-            onClick={() =>
-              document
-                .getElementById("services")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-            style={{
-              background: "#C77B30",
-              color: "#FFF8EC",
-              padding: "1rem 2rem",
-              borderRadius: "6px",
-              fontWeight: "bold",
-              border: "none",
-              cursor: "pointer",
-            }}
-          >
-            View Services
-          </button>
+          <a href="#services" className="btn-saffron">View Services</a>
         </div>
       </section>
 
-      {/* Core Promise Section */}
-      <section
-        style={{
-          textAlign: "center",
-          padding: "4rem 2rem",
-          background: "linear-gradient(135deg, #FFF8EC 0%, #FDE6B8 100%)",
-        }}
-      >
-        <h2 style={{ color: "#C77B30", marginBottom: "1rem" }}>
-          🪔 One Call for Every Ritual • Every Belief • Every Blessing
-        </h2>
-        <p
+      {/* Pandit Ji */}
+     <section className="section section-cream section-centered">
+  <div className="container">
+    <div className="section-tag">Our Pandit</div>
+    <h2 className="section-title">Meet Pandit Hari Om Mishra Ji</h2>
+
+    <div className="pandit-card">
+      <div style={{ flexShrink: 0, textAlign: "center" }}>
+        
+        {/* ✅ Image Added Here */}
+        <img
+          src={panditPhoto}
+          alt="Pandit Hari Om Mishra Ji"
           style={{
-            color: "#5C432A",
-            maxWidth: "700px",
-            margin: "0 auto",
-            fontSize: "1.05rem",
-            lineHeight: "1.6",
+            width: 100,
+            height: 100,
+            borderRadius: "50%",
+            objectFit: "cover",
+            border: "3px solid var(--gold)",
+            margin: "0 auto 8px",
+            display: "block"
           }}
-        >
-          We believe spirituality should be effortless and accessible.  
-          That’s why our expert Pandits bring everything — from authentic
-          samagri to divine guidance — right to your doorstep.  
-          <br />
-          <b>Just book. Pray. And feel the peace flow.</b>
+        />
+
+        <div style={{ fontSize: 13, color: "var(--saffron)", fontWeight: 600 }}>
+          15+ Years Experience
+        </div>
+      </div>
+
+      <div>
+        <h3 style={{ fontSize: 20, color: "var(--brown)", marginBottom: 10 }}>
+          Pandit Hari Om Mishra Ji
+        </h3>
+
+        <p style={{ fontSize: 14, color: "var(--text-muted)", lineHeight: 1.7, marginBottom: 14 }}>
+          With over 15 years of experience, Pandit Hari Om Mishra Ji has helped thousands of
+          devotees perform sacred rituals with devotion and precision. From household poojas
+          to corporate ceremonies, his guidance ensures that every mantra and moment radiates
+          positivity and peace.
         </p>
-      </section>
 
-      {/* Meet Pandit Ji */}
-      <section
-        style={{
-          textAlign: "center",
-          padding: "4rem 2rem",
-          background: "#FFF8EC",
-        }}
-      >
-        <h2
-          style={{
-            color: "#C77B30",
-            fontSize: "2rem",
-            marginBottom: "1.5rem",
-          }}
+        <div style={{ fontSize: 13, color: "var(--saffron)", fontWeight: 600, marginBottom: 14 }}>
+          🚩 Serving Delhi NCR &nbsp;|&nbsp; 🌐 Online Globally
+        </div>
+
+        <a
+          href={waLink("Namaste! I want to speak with Pandit Ji.")}
+          target="_blank"
+          rel="noreferrer"
+          className="btn-wa"
+          style={{ fontSize: 13, padding: "10px 20px" }}
         >
-          ✨ Meet Pandit Hari Om Mishra Ji ✨
-        </h2>
+          💬 Connect Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
+      {/* Services */}
+      <section id="services" className="section section-white">
+  <div className="container">
+    <div className="section-tag">Our Services</div>
+
+    <h2 className="section-title">Choose Your Divine Experience</h2>
+
+    <p className="section-sub">
+      All services include complete samagri.{" "}
+      <span style={{ color: "var(--saffron)", fontWeight: 600 }}>
+        Offline: Delhi NCR only.
+      </span>{" "}
+      Online pooja available across India.
+    </p>
+
+    <div className="service-booking-grid">
+      {SERVICES.map((s) => (
         <div
+          className="booking-card"
+          key={s.name}
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            maxWidth: "700px",
-            margin: "0 auto",
-            background: "#FFF",
-            borderRadius: "15px",
-            padding: "2rem",
-            boxShadow: "0 6px 20px rgba(0,0,0,0.1)",
+            borderRadius: 16,
+            overflow: "hidden",
+            background: "#fff",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+            transition: "all 0.3s ease"
           }}
         >
+          {/* 🔥 BIG IMAGE */}
           <img
-            src="https://d1gevr1kq4ckjt.cloudfront.net/A21UD5GUWC34V0_98a9c2aa5909434d3bfb931eca14ab26_ProductImage_PT02"
-            alt="Pandit Hari Om Mishra Ji"
+            src={s.image}
+            alt={s.name}
             style={{
-              width: "180px",
-              height: "180px",
+              width: "100%",
+              height: 180,
               objectFit: "cover",
-              borderRadius: "50%",
-              border: "3px solid #E6A74E",
-              marginBottom: "1.2rem",
+              display: "block"
             }}
           />
-          <p
-            style={{
-              color: "#3E2A1F",
-              fontSize: "1rem",
-              lineHeight: "1.6",
-              textAlign: "justify",
-            }}
-          >
-            With over 15 years of experience, <b>Pandit Hari Om Mishra Ji</b> has helped
-            thousands of devotees perform sacred rituals with devotion and precision.
-            From household poojas to corporate ceremonies, his guidance ensures that
-            every mantra, offering, and moment radiates positivity and peace.
-          </p>
-          <p
-            style={{
-              color: "#C77B30",
-              fontWeight: "600",
-              marginTop: "1.2rem",
-            }}
-          >
-            🙏 “Let spirituality meet simplicity.” 🙏  
-            <br />🚩 Serving Delhi NCR and Online Globally
-          </p>
-        </div>
-      </section>
 
-      {/* Services Section */}
-      <section id="services" style={{ padding: "4rem 2rem" }}>
-        <h2
-          style={{
-            textAlign: "center",
-            color: "#C77B30",
-            fontSize: "2rem",
-            marginBottom: "2rem",
-          }}
-        >
-          Choose Your Divine Experience
-        </h2>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: "2rem",
-            maxWidth: "1200px",
-            margin: "0 auto",
-          }}
-        >
-          {services.map((s) => {
-            const msg = encodeURIComponent(
-              `I want to book ${s.name} (${s.price}). Please share details.`
-            );
-            return (
-              <div
-                key={s.id}
-                style={{
-                  background: "#FFF8EC",
-                  borderRadius: "15px",
-                  padding: "1.5rem",
-                  textAlign: "center",
-                  border: "1px solid #F1D5A5",
-                  boxShadow: "0 8px 20px rgba(0,0,0,0.1)",
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "scale(1.03)";
-                  e.currentTarget.style.boxShadow =
-                    "0 8px 25px rgba(199,123,48,0.3)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "scale(1)";
-                  e.currentTarget.style.boxShadow =
-                    "0 8px 20px rgba(0,0,0,0.1)";
-                }}
+          {/* 📦 CONTENT */}
+          <div style={{ padding: 16 }}>
+            <h3 style={{ marginBottom: 6 }}>{s.name}</h3>
+
+            <div
+              className="price"
+              style={{
+                color: "var(--saffron)",
+                fontWeight: 700,
+                marginBottom: 8
+              }}
+            >
+              {s.price}
+            </div>
+
+            <p style={{ fontSize: 14, marginBottom: 14 }}>
+              {s.desc}
+            </p>
+
+            <div className="booking-card-actions">
+              <a
+                href={waLink(`I want to book ${s.name} (${s.price}). Please share details.`)}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-wa"
+                style={{ fontSize: 13, padding: "8px 16px" }}
               >
-                <h3 style={{ color: "#C77B30" }}>{s.name}</h3>
-                <p style={{ color: "#5C432A" }}>{s.desc}</p>
-                <p style={{ fontWeight: "bold", color: "#C77B30" }}>{s.price}</p>
-                <div style={{ display: "flex", justifyContent: "center", gap: "0.5rem" }}>
-                  <a
-                    href={`${whatsappBase}${msg}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      style={{
-                        background: "#E6A74E",
-                        color: "#FFF",
-                        padding: "0.6rem 1rem",
-                        borderRadius: "5px",
-                        border: "none",
-                        cursor: "pointer",
-                      }}
-                    >
-                      Book via WhatsApp
-                    </button>
-                  </a>
-                  <button
-                    onClick={() => setSelectedService(s)}
-                    style={{
-                      background: "#C77B30",
-                      color: "#FFF8EC",
-                      padding: "0.6rem 1rem",
-                      borderRadius: "5px",
-                      border: "none",
-                      cursor: "pointer",
-                    }}
-                  >
-                    View Details
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+                💬 Book via WhatsApp
+              </a>
 
-      {/* Final CTA */}
-      <section
-        style={{
-          textAlign: "center",
-          padding: "4rem 2rem",
-          background: "linear-gradient(135deg, #FDE6B8 0%, #FFF8EC 100%)",
-        }}
-      >
-        <h2 style={{ color: "#C77B30", fontSize: "1.8rem" }}>
-          🌸 Let’s Make Every Ritual Effortless and Divine
-        </h2>
-        <p
-          style={{
-            color: "#5C432A",
-            maxWidth: "600px",
-            margin: "1rem auto 2rem",
-            fontSize: "1rem",
-          }}
-        >
-          No need to manage samagri, search Pandits, or stress about rituals.  
-          With Satvik Havan, your spiritual peace is just a message away.
-        </p>
-        <a
-          href={`${whatsappBase}${encodeURIComponent("I want to book a Pandit Ji now")}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button
-            style={{
-              background: "#C77B30",
-              color: "#FFF8EC",
-              padding: "1rem 2rem",
-              borderRadius: "6px",
-              border: "none",
-              cursor: "pointer",
-              fontWeight: "bold",
-            }}
-          >
-            Book on WhatsApp
-          </button>
-        </a>
+              <button
+                className="btn-outline"
+                style={{ fontSize: 13, padding: "8px 16px" }}
+                onClick={() => setSelected(s)}
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+      {/* CTA */}
+      <section className="cta-section">
+        <h2>Let's Make Every Ritual Effortless</h2>
+        <p>No stress, no searching — just book and experience pure devotion.</p>
+        <div className="cta-btns">
+          <a href={waLink("Namaste! I want to book a Pandit Ji.")} target="_blank" rel="noreferrer" className="btn-wa" style={{ fontSize: 16, padding: "15px 32px" }}>
+            💬 Book on WhatsApp
+          </a>
+        </div>
       </section>
 
       {/* Modal */}
-      {selectedService && (
+      {selected && (
         <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: "rgba(0,0,0,0.6)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            zIndex: 999,
-          }}
-          onClick={() => setSelectedService(null)}
+          style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.55)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 800, padding: 24 }}
+          onClick={() => setSelected(null)}
         >
           <div
-            style={{
-              background: "#FFF8EC",
-              borderRadius: "15px",
-              padding: "2rem",
-              maxWidth: "500px",
-              textAlign: "center",
-              boxShadow: "0 8px 20px rgba(0,0,0,0.2)",
-            }}
-            onClick={(e) => e.stopPropagation()}
+            style={{ background: "var(--cream)", borderRadius: 16, padding: 32, maxWidth: 480, width: "100%", textAlign: "center" }}
+            onClick={e => e.stopPropagation()}
           >
-            <h2 style={{ color: "#C77B30" }}>{selectedService.name}</h2>
-            <p style={{ color: "#5C432A", marginBottom: "1rem" }}>
-              {selectedService.detail}
-            </p>
-            <p style={{ fontWeight: "bold", color: "#C77B30" }}>
-              {selectedService.price}
-            </p>
-            <a
-              href={`${whatsappBase}${encodeURIComponent(
-                `I want to book ${selectedService.name} (${selectedService.price})`
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                style={{
-                  background: "#E6A74E",
-                  color: "#FFF",
-                  padding: "0.7rem 1.5rem",
-                  borderRadius: "6px",
-                  border: "none",
-                  cursor: "pointer",
-                  fontWeight: "bold",
-                }}
+            <div style={{ fontSize: 40, marginBottom: 12 }}>{selected.icon}</div>
+            <h2 style={{ color: "var(--brown)", marginBottom: 8 }}>{selected.name}</h2>
+            <p style={{ fontSize: 14, color: "var(--text-muted)", lineHeight: 1.7, marginBottom: 14 }}>{selected.detail}</p>
+            <div style={{ fontSize: 16, fontWeight: 600, color: "var(--saffron)", marginBottom: 20 }}>{selected.price}</div>
+            <div style={{ display: "flex", gap: 10, justifyContent: "center" }}>
+              <a
+                href={waLink(`I want to book ${selected.name} (${selected.price})`)}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-wa"
               >
-                Book Now on WhatsApp
-              </button>
-            </a>
-            <button
-              style={{
-                marginTop: "1rem",
-                background: "#C77B30",
-                color: "#FFF8EC",
-                padding: "0.6rem 1.5rem",
-                borderRadius: "6px",
-                border: "none",
-                cursor: "pointer",
-              }}
-              onClick={() => setSelectedService(null)}
-            >
-              Close
-            </button>
+                💬 Book Now
+              </a>
+              <button className="btn-outline" onClick={() => setSelected(null)}>Close</button>
+            </div>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

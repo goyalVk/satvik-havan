@@ -1,343 +1,122 @@
+// About.jsx
 import React from "react";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import { waLink } from "../data/products";
 import "../styles/global.css";
 
 export default function About() {
   return (
-    <div className="about-page">
-      {/* Hero Section */}
-      <section
-        className="about-hero"
-        style={{
-          background:
-            "linear-gradient(135deg, #FFF8EC 0%, #FDE6B8 100%)",
-          padding: "6rem 2rem",
-          textAlign: "center",
-        }}
-      >
-        <h1
-          style={{
-            fontSize: "2.8rem",
-            color: "#C77B30",
-            marginBottom: "1rem",
-            fontWeight: "700",
-          }}
-        >
-          About <span className="accent-text">Satvik Havan</span>
-        </h1>
-        <p
-          style={{
-            color: "#5C432A",
-            maxWidth: "700px",
-            margin: "0 auto",
-            fontSize: "1.1rem",
-            lineHeight: "1.7",
-          }}
-        >
-          Where ancient faith meets modern simplicity.  
-          <br />
-          We bring authentic <b>Pooja, Havan, and Vastu</b> services to every
-          doorstep — complete with all samagri, guidance, and devotion.
+    <>
+      <Helmet>
+        <title>About Satvik Havan | Pure Ayurvedic Herbs & Vedic Pooja Services India</title>
+        <meta name="description" content="Satvik Havan — founded in 2024 to bring pure Ayurvedic herbs and authentic Vedic pooja services to every home. Pan India herb delivery. Pooja services in Delhi NCR." />
+        <link rel="canonical" href="https://satvikhavan.com/about" />
+        <meta property="og:title" content="About Satvik Havan – Our Story & Mission" />
+        <meta property="og:url" content="https://satvikhavan.com/about" />
+      </Helmet>
+
+      <section className="page-hero">
+        <div className="section-tag">Our Story</div>
+        <h1>About Satvik Havan</h1>
+        <p>
+          Where ancient Ayurvedic wisdom meets modern simplicity —
+          pure herbs delivered to your door, authentic pandits for every ritual.
         </p>
       </section>
 
-      {/* Our Journey */}
-      <section
-        className="about-section"
-        style={{ padding: "4rem 2rem", textAlign: "center" }}
-      >
-        <h2
-          style={{
-            color: "#C77B30",
-            marginBottom: "2.5rem",
-            fontSize: "2rem",
-          }}
-        >
-          🪔 Our Journey of Faith
-        </h2>
+      {/* Story */}
+      <section className="section section-white">
+        <div className="container" style={{ maxWidth: 860, textAlign: "center" }}>
+          <div className="section-tag">Our Journey</div>
+          <h2 className="section-title">Born from a Purpose</h2>
+          <p style={{ fontSize: 16, color: "var(--text-muted)", lineHeight: 1.85, marginBottom: 24 }}>
+            Satvik Havan was founded in 2024 with one heartfelt purpose — to revive the purity of
+            Ayurveda and devotion in today's busy world. We saw that people wanted authentic
+            Ayurvedic herbs but couldn't trust what was available online. We wanted to change that.
+          </p>
+          <p style={{ fontSize: 16, color: "var(--text-muted)", lineHeight: 1.85 }}>
+            Today, Satvik Havan ships 26+ authentic herbs across India — with strong demand from
+            Tamil Nadu, Maharashtra, and Karnataka. We also offer Pandit Ji booking and pooja
+            services in Delhi NCR, plus online pooja for devotees worldwide.
+          </p>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "2rem",
-            maxWidth: "800px",
-            margin: "0 auto",
-          }}
-        >
-          {[
-            {
-              year: "2024",
-              text: "Founded with the vision to simplify spirituality and make authentic pooja services easily accessible.",
-            },
-            {
-              year: "2025",
-              text: "Introduced herbal and spiritual products, and built a network of certified Vedic Pandits across India.",
-            },
-          ].map((step, i) => (
-            <div key={i}>
-              <div
-                style={{
-                  width: "20px",
-                  height: "20px",
-                  borderRadius: "50%",
-                  background: "#C77B30",
-                  margin: "0 auto",
-                  boxShadow: "0 0 20px rgba(199,123,48,0.5)",
-                }}
-              ></div>
-              <p style={{ marginTop: "1rem", color: "#5C432A" }}>
-                <strong>{step.year}:</strong> {step.text}
-              </p>
-              {i < 2 && (
-                <div
-                  style={{
-                    width: "2px",
-                    height: "50px",
-                    background: "#E6A74E",
-                    opacity: 0.5,
-                    margin: "0.5rem auto",
-                  }}
-                ></div>
-              )}
-            </div>
-          ))}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginTop: 40 }}>
+            {[
+              { year: "2024", text: "Founded with the vision to make authentic herbs and pooja services easily accessible." },
+              { year: "2025", text: "Launched 26+ herbs on Amazon and satvikhavan.com. Receiving orders from Tamil Nadu, Maharashtra, Karnataka." },
+            ].map(s => (
+              <div key={s.year} style={{ background: "var(--cream-dark)", borderRadius: "var(--radius)", padding: 24, textAlign: "left" }}>
+                <div style={{ fontSize: 22, fontFamily: "'Yeseva One', serif", color: "var(--saffron)", marginBottom: 8 }}>{s.year}</div>
+                <p style={{ fontSize: 14, color: "var(--text-muted)", lineHeight: 1.65 }}>{s.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </section>
-
-      {/* Our Story */}
-      <section
-        style={{
-          padding: "4rem 2rem",
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-      >
-        <h2
-          style={{
-            color: "#C77B30",
-            marginBottom: "2rem",
-            fontSize: "2rem",
-          }}
-        >
-          🌸 Our Story
-        </h2>
-        <p
-          style={{
-            lineHeight: "1.8",
-            fontSize: "1.1rem",
-            color: "#5C432A",
-          }}
-        >
-          Satvik Havan was born with a heartfelt purpose — to bring back the
-          <b> purity of devotion </b> in today’s busy world.  
-          Many of us wish to perform pooja with the right rituals but struggle
-          with finding <b>Pandit Ji, samagri</b>, and authentic guidance.  
-          We decided to change that.
-          <br />
-          <br />
-          Today, Satvik Havan stands as a one-stop destination for all your
-          spiritual needs — from booking a <b>home pooja or corporate havan</b>
-          to <b> online rituals</b> and <b>Vastu consultations</b>.  
-          We ensure every ceremony is performed with authenticity, devotion, and ease.
-        </p>
       </section>
 
       {/* Mission */}
-      <section
-        style={{
-          background: "#F4E9D8",
-          padding: "4rem 2rem",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ color: "#C77B30", marginBottom: "1.5rem" }}>
-          🔱 Our Mission
-        </h2>
-        <p
-          style={{
-            fontSize: "1.1rem",
-            maxWidth: "800px",
-            margin: "0 auto",
-            lineHeight: "1.8",
-            color: "#5C432A",
-          }}
-        >
-          To make every home — whether in India or abroad — a space of peace,
-          purity, and divine connection.  
-          <br />
-          We simplify spirituality by offering:
-        </p>
-        <ul
-          style={{
-            listStyle: "none",
-            marginTop: "1rem",
-            color: "#5C432A",
-            lineHeight: "1.8",
-            fontSize: "1.05rem",
-          }}
-        >
-          <li>🪔 <b>All-in-one pooja services</b> with complete samagri</li>
-          <li>📿 <b>Verified Vedic Pandit Jis</b> — available online & offline</li>
-          <li>🌍 <b>friendly e-Puja</b> rituals streamed live from India</li>
-          <li>🏡 <b>Vastu consultation</b> for homes, offices & startups</li>
-        </ul>
-        <p style={{ marginTop: "1rem", color: "#5C432A" }}>
-          Every pooja we conduct is guided by knowledge and performed with heart.
-        </p>
-      </section>
-
-      {/* Values */}
-      <section style={{ padding: "4rem 2rem" }}>
-        <h2
-          style={{
-            textAlign: "center",
-            color: "#C77B30",
-            marginBottom: "2rem",
-          }}
-        >
-          🌿 Our Core Values
-        </h2>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "1.5rem",
-            maxWidth: "1000px",
-            margin: "0 auto",
-          }}
-        >
-          {[
-            {
-              title: "Purity",
-              desc: "Every samagri and ritual is prepared and performed with sacred intent and devotion.",
-            },
-            {
-              title: "Trust",
-              desc: "We believe true spirituality thrives on honesty, clarity, and authentic Vedic practices.",
-            },
-            {
-              title: "Knowledge",
-              desc: "We explain the meaning behind every mantra and ritual — because faith begins with understanding.",
-            },
-            {
-              title: "Service",
-              desc: "Our greatest joy lies in serving families and spreading peace through every havan and prayer.",
-            },
-          ].map((v, i) => (
-            <div
-              key={i}
-              style={{
-                background: "#FFF8EC",
-                borderRadius: "12px",
-                padding: "1.5rem",
-                boxShadow: "0 6px 15px rgba(0,0,0,0.1)",
-                textAlign: "center",
-                border: "1px solid #F1D5A5",
-              }}
-            >
-              <h3 style={{ color: "#C77B30", marginBottom: "0.5rem" }}>
-                {v.title}
-              </h3>
-              <p style={{ color: "#5C432A" }}>{v.desc}</p>
-            </div>
-          ))}
+      <section className="section section-alt section-centered">
+        <div className="container" style={{ maxWidth: 760 }}>
+          <div className="section-tag">Our Mission</div>
+          <h2 className="section-title">What We Believe</h2>
+          <p className="section-sub" style={{ margin: "0 auto 36px" }}>
+            To make every home a space of peace, purity, and divine connection —
+            through authentic herbs and sincere Vedic practice.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
+            {[
+              { icon: "🌿", text: "100% pure Ayurvedic herbs — no chemicals, no adulteration" },
+              { icon: "🕉️", text: "Verified Vedic Pandits — online & offline pooja" },
+              { icon: "🚚", text: "Pan India delivery — Tamil Nadu, Maharashtra & beyond" },
+              { icon: "📚", text: "Education — we explain every herb's Ayurvedic context" },
+            ].map(m => (
+              <div key={m.text} style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.13)", borderRadius: "var(--radius)", padding: 20, textAlign: "center" }}>
+                <div style={{ fontSize: 28, marginBottom: 10 }}>{m.icon}</div>
+                <p style={{ fontSize: 13, color: "rgba(253,246,227,0.72)", lineHeight: 1.6 }}>{m.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Global Spirituality */}
-      <section
-        style={{
-          background: "#F4E9D8",
-          padding: "4rem 2rem",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ color: "#C77B30", marginBottom: "1rem" }}>
-          🌍 Spirituality Without Borders
-        </h2>
-        <p
-          style={{
-            fontSize: "1.1rem",
-            maxWidth: "800px",
-            margin: "0 auto",
-            color: "#5C432A",
-            lineHeight: "1.8",
-          }}
-        >
-          From Delhi to Dubai, from Mumbai to Melbourne —  
-          <b>Satvik Havan</b> has become a trusted spiritual companion for
-          thousands of families.  
-          <br />
-          Because we believe faith isn’t bound by location — it’s a feeling
-          that travels through devotion, sincerity, and sound of the mantras.
-        </p>
+      {/* Values */}
+      <section className="section section-cream">
+        <div className="container">
+          <div className="section-tag">Core Values</div>
+          <h2 className="section-title">What Drives Us</h2>
+          <div className="values-grid">
+            {[
+              { title: "Purity", desc: "Every herb is sourced and packed with sacred intent. No compromise on quality — ever." },
+              { title: "Trust", desc: "Honest product descriptions, fair prices, and genuine Ayurvedic knowledge." },
+              { title: "Knowledge", desc: "We explain the meaning and use of every herb — because understanding deepens devotion." },
+              { title: "Service", desc: "Our greatest joy is serving families and spreading wellness through every herb and prayer." },
+            ].map(v => (
+              <div className="value-card" key={v.title}>
+                <h3>{v.title}</h3>
+                <p>{v.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      {/* Founder’s Message */}
-      <section style={{ padding: "4rem 2rem", textAlign: "center" }}>
-        <h2 style={{ color: "#C77B30", marginBottom: "1rem" }}>
-          🪔 A Message from the Founders
-        </h2>
-        <p
-          style={{
-            fontSize: "1.1rem",
-            maxWidth: "800px",
-            margin: "0 auto 1.5rem",
-            color: "#5C432A",
-            lineHeight: "1.8",
-          }}
-        >
-          “We started Satvik Havan not as a business, but as a prayer —  
-          a promise that every diya lit should bring light to someone’s life.  
-          Our goal is to keep Indian spirituality authentic, accessible, and
-          alive for the next generation.”
-        </p>
-        <h4 style={{ color: "#E6A74E", fontWeight: "700" }}>
-          — Team Satvik Havan
-        </h4>
+      {/* Founder */}
+      <section className="section section-white" style={{ textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: 680 }}>
+          <div className="section-tag">Founders' Message</div>
+          <blockquote style={{ fontSize: 18, color: "var(--text-muted)", fontStyle: "italic", lineHeight: 1.75, marginBottom: 20 }}>
+            "We started Satvik Havan not as a business, but as a prayer —
+            a promise that every herb we send carries the energy of authenticity,
+            and every puja we conduct brings genuine peace."
+          </blockquote>
+          <p style={{ fontSize: 14, fontWeight: 600, color: "var(--saffron)" }}>— Team Satvik Havan</p>
+          <div style={{ display: "flex", gap: 12, justifyContent: "center", marginTop: 32, flexWrap: "wrap" }}>
+            <Link to="/herbs" className="btn-saffron">Shop Herbs</Link>
+            <Link to="/contact" className="btn-outline">Get in Touch</Link>
+          </div>
+        </div>
       </section>
-
-      {/* CTA */}
-      <section
-        style={{
-          background: "#F4E9D8",
-          textAlign: "center",
-          padding: "4rem 2rem",
-        }}
-      >
-        <h2 style={{ color: "#C77B30" }}>Begin Your Satvik Journey Today</h2>
-        <p
-          style={{
-            color: "#5C432A",
-            maxWidth: "600px",
-            margin: "0.8rem auto 2rem",
-          }}
-        >
-          Let us take care of your next puja — from samagri to blessings.  
-          All you need is faith, we’ll handle the rest.
-        </p>
-        <a
-          href="https://wa.me/918076170877?text=I want to book Pandit Ji for puja"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button
-            style={{
-              background: "#E6A74E",
-              color: "#FFF",
-              padding: "1rem 2rem",
-              borderRadius: "6px",
-              border: "none",
-              cursor: "pointer",
-              fontWeight: "bold",
-            }}
-          >
-            Connect on WhatsApp
-          </button>
-        </a>
-      </section>
-    </div>
+    </>
   );
 }
