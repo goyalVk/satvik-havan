@@ -34,6 +34,15 @@ const HERB_SLUGS = [
   'amba-haldi-powder',
 ];
 
+// generate-sitemap.js mein ye array add karo HERB_SLUGS ke baad:
+
+const BLOG_SLUGS = [
+  'ashwagandha-benefits-hindi',
+  'brahmi-powder-benefits', 
+  'gruhapravesam-samagri-list',
+  'ayurvedic-herbs-for-hair-growth',
+];
+
 const STATIC_PAGES = [
   { url: '/',         priority: '1.0', changefreq: 'weekly'  },
   { url: '/herbs',    priority: '0.9', changefreq: 'weekly'  },
@@ -42,13 +51,19 @@ const STATIC_PAGES = [
   { url: '/contact',  priority: '0.6', changefreq: 'monthly' },
 ];
 
+const BLOG_PAGES = BLOG_SLUGS.map(slug => ({
+  url: `/blogs/${slug}`,
+  priority: '0.7',
+  changefreq: 'monthly',
+}));
+
 const HERB_PAGES = HERB_SLUGS.map(slug => ({
   url: `/herbs/${slug}`,
   priority: '0.8',
   changefreq: 'monthly',
 }));
 
-const ALL_PAGES = [...STATIC_PAGES, ...HERB_PAGES];
+const ALL_PAGES = [...STATIC_PAGES, ...HERB_PAGES, ...BLOG_PAGES];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
