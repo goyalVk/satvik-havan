@@ -2,7 +2,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { waLink } from "../data/products";
 import "../styles/global.css";
 
 export default function About() {
