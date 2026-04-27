@@ -544,9 +544,8 @@ export const PRODUCTS = [
       slug: "shatavari-powder",
       name: "Shatavari Powder",
       variants: [
-        { quantity: "100g", price: "₹249", priceNum: 249,
-          quantity: "200g", price: "₹349", priceNum: 349
-         }
+        { quantity: "100g", price: "₹249", priceNum: 249 },
+        { quantity: "200g", price: "₹399", priceNum: 399 },
       ],
       category: "wellness",
       description: "Ayurvedic herb for women wellness and cooling support.",
