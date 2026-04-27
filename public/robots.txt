@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://satvikhavan.com
+
+# Sitemaps
+Sitemap: https://satvikhavan.com/sitemap.xml
