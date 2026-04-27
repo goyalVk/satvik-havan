@@ -1,8 +1,13 @@
 import React from "react";
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 
 const Kits = () => {
+  const router = useRouter();
+  if (!router.isReady) return null;
+
+  
   const kitsData = [
   {
     id: 1,
@@ -211,7 +216,7 @@ const Kits = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <Link to={`/kits/${service.id}`}>
+                  <Link href ={`/kits/${service.id}`}>
                     <button
                       style={{
                         background: "#C77B30",
