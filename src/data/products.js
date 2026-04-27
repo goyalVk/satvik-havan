@@ -1,20 +1,5 @@
 export const PRODUCTS = [
-  // ── KITS ──
-  // ── IMMUNITY ──
-  {
-    id: 1,
-    slug: "ashwagandha-root",
-    name: "Ashwagandha Root",
-    variants: [
-      { quantity: "100g", price: "₹199", priceNum: 199 },
-      { quantity: "200g", price: "₹299", priceNum: 299 },
-    ],
-    category: "immunity",
-    description: "Boosts energy, reduces stress and builds immunity — Ayurveda's most powerful adaptogen.",
-    longDescription: "Ashwagandha (Withania somnifera) is Ayurveda's premier rasayana herb. Known as 'Indian Ginseng', it reduces cortisol, boosts stamina, and improves mental clarity. Sun-dried and handpicked roots — 100% natural, no additives.",
-    benefits: ["Reduces stress & anxiety", "Boosts energy & stamina", "Builds immunity", "Supports hormonal balance"],
-    image: "https://m.media-amazon.com/images/I/61Kh6JGq-FL.jpg"
-  },
+  
   {
     id: 2,
     slug: "guduchi-giloy-powder",
@@ -71,20 +56,6 @@ export const PRODUCTS = [
     description: "Soothes throat, aids digestion, and purifies the system — pure licorice root sticks.",
     longDescription: "Mulethi (Glycyrrhiza glabra) licorice root sticks — sun-dried and handpicked. Used for centuries to soothe sore throats and relieve digestive discomfort. Rich in glycyrrhizin, a natural anti-inflammatory.",
     benefits: ["Soothes throat", "Aids digestion", "Anti-inflammatory", "Supports immunity"],
-    image: "https://m.media-amazon.com/images/I/61W9A6gAaTL.jpg"
-  },
-  {
-    id: 6,
-    slug: "mulethi-powder",
-    name: "Mulethi Powder (Yashtimadhu)",
-    variants: [
-      { quantity: "100g", price: "₹249", priceNum: 249 },
-      { quantity: "200g", price: "₹349", priceNum: 349 },
-    ],
-    category: "digestion",
-    description: "Licorice root powder — Ayurvedic support for cough, sore throat and digestion.",
-    longDescription: "Mulethi powder — finely ground licorice root. Excellent for herbal kadha, Ayurvedic formulations, or face packs for skin brightening. 100% natural.",
-    benefits: ["Cough & throat relief", "Digestive support", "Skin brightening", "Easy powder form"],
     image: "https://m.media-amazon.com/images/I/61W9A6gAaTL.jpg"
   },
   {
@@ -385,8 +356,6 @@ export const PRODUCTS = [
     benefits: ["Hair growth", "Natural fragrance", "Hair oil ingredient", "Havan samagri use"],
     image: "https://m.media-amazon.com/images/I/51qg8U4zFyL.jpg"
   },
-
-  // ── WELLNESS ──
   {
     id: 28,
     slug: "jatamansi-root",
@@ -414,6 +383,34 @@ export const PRODUCTS = [
     longDescription: "Kamarkas (Butea monosperma resin) — used in postpartum nutrition for centuries. Key ingredient in Gond Laddu for new mothers. Strengthens back, uterus, and bones.",
     benefits: ["Postpartum recovery", "Gond Laddu ingredient", "Bone strength", "Women's wellness"],
     image: "https://m.media-amazon.com/images/I/515SYij6cTL.jpg"
+  },
+   {
+    id: 6,
+    slug: "mulethi-powder",
+    name: "Mulethi Powder (Yashtimadhu)",
+    variants: [
+      { quantity: "100g", price: "₹249", priceNum: 249 },
+      { quantity: "200g", price: "₹349", priceNum: 349 },
+    ],
+    category: "digestion",
+    description: "Licorice root powder — Ayurvedic support for cough, sore throat and digestion.",
+    longDescription: "Mulethi powder — finely ground licorice root. Excellent for herbal kadha, Ayurvedic formulations, or face packs for skin brightening. 100% natural.",
+    benefits: ["Cough & throat relief", "Digestive support", "Skin brightening", "Easy powder form"],
+    image: "https://m.media-amazon.com/images/I/61W9A6gAaTL.jpg"
+  },
+  {
+    id: 1,
+    slug: "ashwagandha-root",
+    name: "Ashwagandha Root",
+    variants: [
+      { quantity: "100g", price: "₹199", priceNum: 199 },
+      { quantity: "200g", price: "₹299", priceNum: 299 },
+    ],
+    category: "immunity",
+    description: "Boosts energy, reduces stress and builds immunity — Ayurveda's most powerful adaptogen.",
+    longDescription: "Ashwagandha (Withania somnifera) is Ayurveda's premier rasayana herb. Known as 'Indian Ginseng', it reduces cortisol, boosts stamina, and improves mental clarity. Sun-dried and handpicked roots — 100% natural, no additives.",
+    benefits: ["Reduces stress & anxiety", "Boosts energy & stamina", "Builds immunity", "Supports hormonal balance"],
+    image: "https://m.media-amazon.com/images/I/61Kh6JGq-FL.jpg"
   },
   {
     id: 30,
@@ -529,7 +526,201 @@ export const PRODUCTS = [
     benefits: ["Premium havan ingredient", "Spiritual fragrance", "Rare aromatic herb", "Ayurvedic use"],
     image: "https://m.media-amazon.com/images/I/51cRsamHFSL.jpg"
   },
-];
+    {
+      id: 38,
+      slug: "moringa-powder",
+      name: "Moringa Powder",
+      variants: [
+        { quantity: "100g", price: "₹199", priceNum: 199 },
+        { quantity: "200g", price: "₹349", priceNum: 349 },
+      ],
+      category: "immunity",
+      description: "Natural superfood for energy, nutrition and daily wellness.",
+      benefits: ["Energy", "Nutrition", "Daily wellness", "Superfood"],
+      image: "https://m.media-amazon.com/images/I/51+VC3zL8PL.jpg"
+    },
+    {
+      id: 39,
+      slug: "shatavari-powder",
+      name: "Shatavari Powder",
+      variants: [
+        { quantity: "100g", price: "₹249", priceNum: 249,
+          quantity: "200g", price: "₹349", priceNum: 349
+         }
+      ],
+      category: "wellness",
+      description: "Ayurvedic herb for women wellness and cooling support.",
+      benefits: ["Women wellness","Cooling herb","Nutrition","Hormonal support"],
+      image: "https://m.media-amazon.com/images/I/51aqks8z3ZL.jpg"
+    },
+    {
+    id:40,
+    slug:"ashok-chaal",
+    name:"Ashok Chaal",
+    variants:[{quantity:"100g",price:"₹229",priceNum:229}, {quantity:"200g",price:"₹349",priceNum:349}],
+    category:"wellness",
+    description:"Traditional Ayurvedic bark for women's wellness.",
+    benefits:["Women support","Classical herb","Daily wellness","Ayurvedic use"],
+    image:"https://m.media-amazon.com/images/I/51fpDPGQILL.jpg"
+    },
+    {
+    id:41,
+    slug:"babool-gond",
+    name:"Babool Gond",
+    variants:[
+      {quantity:"100g",price:"₹149",priceNum:149},
+      {quantity:"250g",price:"₹259",priceNum:259},
+      {quantity:"500g",price:"₹399",priceNum:399}
+    ],
+    category:"wellness",
+    description:"Edible Acacia gum for traditional use and daily wellness.",
+    benefits:["Cooling","Traditional use","Strength","Digestive support"],
+    image:"https://m.media-amazon.com/images/I/61Mf4xF7qzL.jpg"
+    },
+    {
+    id:42,
+    slug:"gond-katira",
+    name:"Gond Katira",
+    variants:[{quantity:"100g",price:"₹179",priceNum:179}, {quantity:"200g",price:"₹299",priceNum:299}],
+    category:"wellness",
+    description:"Cooling edible gum for summer drinks and hydration.",
+    benefits:["Cooling","Hydration","Traditional use","Summer support"],
+    image:"https://m.media-amazon.com/images/I/51C9Uj4WFNL.jpg"
+    },
+    {
+    id:43,
+    slug:"trail-mix-nut-mix",
+    name:"Trail Mix Nut Mix",
+    variants:[{quantity:"500g",price:"₹499",priceNum:499}, {quantity:"1kg",price:"₹899",priceNum:899}],
+    category:"foods",
+    description:"Healthy mixed nuts, seeds and berries snack.",
+    benefits:["Protein","Energy","Healthy snacking","Gym support"],
+    image:"https://m.media-amazon.com/images/I/61ZsAfXtfbL.jpg"
+    },
+    {
+    id:44,
+    slug:"anardana-powder",
+    name:"Anardana Powder",
+    variants:[
+      {quantity:"100g",price:"₹199",priceNum:199},
+      {quantity:"200g",price:"₹299",priceNum:299}],
+    category:"digestion",
+    description:"Tangy digestive spice for chutney and recipes.",
+    benefits:["Digestive spice","Traditional use","Flavor","Gut support"],
+    image:"https://m.media-amazon.com/images/I/61R9WRGOq8L.jpg"
+    },
+    {
+    id:45,
+    slug:"isabgol-husk",
+    name:"Isabgol Husk",
+    variants:[{quantity:"100g",price:"₹199",priceNum:199}, {quantity:"200g",price:"₹349",priceNum:349}],
+    category:"digestion",
+    description:"Natural fiber for digestion and gut health.",
+    benefits:["Fiber","Gut health","Constipation support","Daily wellness"],
+    image:"https://m.media-amazon.com/images/I/51JOJIH2RlL.jpg"
+    },
+    {
+    id:46,
+    slug:"sonth-powder",
+    name:"Sonth Powder",
+    variants:[{quantity:"100g",price:"₹149",priceNum:149}, {quantity:"200g",price:"₹249",priceNum:249}],
+    category:"digestion",
+    description:"Dry ginger powder for kadha and digestion.",
+    benefits:["Digestive fire","Kadha use","Warming herb","Traditional use"],
+    image:"https://m.media-amazon.com/images/I/51L2c4-cQXL.jpg"
+    },
+    {
+    id:47,
+    slug:"triphala-churna",
+    name:"Triphala Churna",
+    variants:[{quantity:"100g",price:"₹249",priceNum:249}, {quantity:"200g",price:"₹349",priceNum:349}],
+    category:"digestion",
+    description:"Classic Ayurvedic digestive blend.",
+    benefits:["Detox","Gut health","Colon cleanse","Triphala formula"],
+    image:"https://m.media-amazon.com/images/I/51Zw9wLesgL.jpg"
+    },
+    {
+    id:48,
+    slug:"khubkala-seeds",
+    name:"Khubkala Seeds",
+    variants:[{quantity:"50g",price:"₹199",priceNum:199}, {quantity:"100g",price:"₹349",priceNum:349}],
+    category:"digestion",
+    description:"Traditional herbal seed for kadha and wellness.",
+    benefits:["Traditional herb","Kadha use","Wellness","Herbal seed"],
+    image:"https://m.media-amazon.com/images/I/61AGDAoki-L.jpg"
+    },
+    {
+    id:49,
+    slug:"bhringraj-dry-leaves",
+    name:"Bhringraj Dry Leaves",
+    variants:[{quantity:"100g",price:"₹199",priceNum:199}, {quantity:"200g",price:"₹349",priceNum:349}],
+    category:"hair",
+    description:"Ayurvedic herb for hair packs and hair oil.",
+    benefits:["Hair growth","Hair oil","Natural care","Ayurvedic herb"],
+    image:"https://m.media-amazon.com/images/I/51r6yqqvmRL.jpg"
+    },
+    {
+    id:50,
+    slug:"ubtan-powder",
+    name:"Ubtan Powder",
+    variants:[{quantity:"100g",price:"₹199",priceNum:199}, {quantity:"200g",price:"₹349",priceNum:349}],
+    category:"skin",
+    description:"Ayurvedic face pack for skin glow.",
+    benefits:["Glow","Tan removal","Natural care","Face pack"],
+    image:"https://m.media-amazon.com/images/I/513ofhTVUZL.jpg"
+    },
+    {
+    id:51,
+    slug:"white-sandalwood-powder",
+    name:"White Sandalwood Powder",
+    variants:[{quantity:"100g",price:"₹299",priceNum:299}, {quantity:"200g",price:"₹499",priceNum:499}],
+    category:"skin",
+    description:"Chandan powder for skin care and puja.",
+    benefits:["Cooling","Glow","Puja use","Skin soothing"],
+    image:"https://m.media-amazon.com/images/I/51mVXn6QCdL.jpg"
+    },
+    {
+    id:54,
+    slug:"javitri",
+    name:"Javitri",
+    variants:[{quantity:"25g",price:"₹199",priceNum:199},
+      {quantity:"50g",price:"₹299",priceNum:299}
+    ],
+    category:"pooja",
+    description:"Premium aromatic mace spice for traditional use.",
+    benefits:["Aromatic","Traditional","Premium spice","Puja use"],
+    image:"https://m.media-amazon.com/images/I/61Dpzl27nmL.jpg"
+    },
+    {
+    id:55,
+    slug:"tulsi-beej",
+    name:"Tulsi Beej",
+    variants:[{quantity:"100g",price:"₹199",priceNum:199}, {quantity:"200g",price:"₹349",priceNum:349}],
+    category:"pooja",
+    description:"Holy basil seeds for traditional and wellness use.",
+    benefits:["Sacred seed","Hydration","Traditional use","Daily wellness"],
+    image:"https://m.media-amazon.com/images/I/51iyGSRs+sL.jpg"
+    },
+    {
+  id: 56,
+  slug: "dakhni-mirch",
+  name: "Dakhni Mirch (Safed Mirch)",
+  variants: [
+    { quantity: "100g", price: "₹249", priceNum: 249 },
+    { quantity: "200g", price: "₹449", priceNum: 449 },
+  ],
+  category: "digestion",
+  description: "Premium white peppercorns for digestion, spice blends and traditional use.",
+  longDescription: "Dakhni Mirch (Safed Mirch / White Pepper) is a warming digestive spice used in Ayurveda and Indian kitchens. Supports metabolism, kindles agni (digestive fire), and is used in soups, spice blends and traditional formulations.",
+  benefits: [
+    "Supports digestion",
+    "Boosts metabolism",
+    "Warming spice",
+    "Traditional Ayurvedic use"
+  ],
+  image: "https://m.media-amazon.com/images/I/61Qq3i+5sYL.jpg"
+},
+    ];
 
 export const CATEGORIES = [
   { id: "all", label: "All Products" },
@@ -540,6 +731,7 @@ export const CATEGORIES = [
   { id: "hair", label: "Hair Care" },
   { id: "wellness", label: "General Wellness" },
   { id: "pooja", label: "Pooja & Havan" },
+  { id: "foods", label: "Superfoods & Snacks" }
 ];
 
 export const WA_NUMBER = "918076170877";
