@@ -1,0 +1,17 @@
+import { useEffect } from "react";
+
+
+export default function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // optional, smooth scroll effect
+    });
+  }, [pathname]);
+
+  return null;
+}
+
