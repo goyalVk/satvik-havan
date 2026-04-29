@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="google-site-verification" content="aRCVs6Uz3vcDTacP2AQrWWjkuoEgB2ZmVz-wm-lOzz4" />
+        <meta name="p:domain_verify" content="1dff310591a9761029d1c8201dcd43e3"/>
       </Head>
       <ScrollToTop />
       <DeliveryBanner />
